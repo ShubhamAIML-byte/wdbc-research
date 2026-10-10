@@ -3,6 +3,9 @@
 > **Production-Quality Medical Machine Learning Research Website & API**  
 > *Comparative Machine Learning, Statistical Evaluation, and Explainable AI on the Wisconsin Diagnostic Breast Cancer (WDBC) Dataset.*
 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FShubhamAIML-byte%2Fwdbc-research)
+[![CI & Deployment Verification](https://github.com/ShubhamAIML-byte/wdbc-research/actions/workflows/ci.yml/badge.svg)](https://github.com/ShubhamAIML-byte/wdbc-research/actions/workflows/ci.yml)
+[![GitHub Repository](https://img.shields.io/badge/GitHub-ShubhamAIML--byte%2Fwdbc--research-181717?logo=github)](https://github.com/ShubhamAIML-byte/wdbc-research)
 [![Next.js](https://img.shields.io/badge/Next.js-14.2-black?logo=next.js)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.7-blue?logo=typescript)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4-38bdf8?logo=tailwindcss)](https://tailwindcss.com/)
@@ -10,7 +13,7 @@
 [![Scikit-Learn](https://img.shields.io/badge/scikit--learn-1.4-orange?logo=scikit-learn)](https://scikit-learn.org/)
 [![XGBoost](https://img.shields.io/badge/XGBoost-2.0-red)](https://xgboost.readthedocs.io/)
 [![SHAP](https://img.shields.io/badge/SHAP-0.45-blueviolet)](https://shap.readthedocs.io/)
-[![Vercel Ready](https://img.shields.io/badge/Vercel-Deploy_Ready-success?logo=vercel)](https://vercel.com/)
+[![Vercel Ready](https://img.shields.io/badge/Vercel-24%2F7_CI%2FCD-success?logo=vercel)](https://vercel.com/)
 
 ---
 
