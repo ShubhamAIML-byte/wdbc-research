@@ -6,7 +6,6 @@ Validates dataset loading, metrics, model persistence, and FastAPI endpoints.
 import os
 import json
 import numpy as np
-import pytest
 from fastapi.testclient import TestClient
 
 import sys
