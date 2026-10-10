@@ -49,3 +49,6 @@ wheels/
 # OS
 .DS_Store
 Thumbs.db
+
+.vercel/
+out/
