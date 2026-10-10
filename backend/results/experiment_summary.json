@@ -1,0 +1,3776 @@
+{
+  "metadata": {
+    "dataset": "Wisconsin Diagnostic Breast Cancer (WDBC)",
+    "n_samples": 569,
+    "n_features": 30,
+    "test_size": 0.2,
+    "train_samples": 455,
+    "test_samples": 114,
+    "random_seed": 42,
+    "bootstrap_resamples": 3000,
+    "confidence_level": 0.95
+  },
+  "dataset": {
+    "total_samples": 569,
+    "n_features": 30,
+    "class_distribution": {
+      "malignant_count": 212,
+      "malignant_pct": 37.26,
+      "benign_count": 357,
+      "benign_pct": 62.74,
+      "positive_class": "Malignant (1)",
+      "negative_class": "Benign (0)"
+    },
+    "train_samples": 455,
+    "test_samples": 114,
+    "features": [
+      "mean radius",
+      "mean texture",
+      "mean perimeter",
+      "mean area",
+      "mean smoothness",
+      "mean compactness",
+      "mean concavity",
+      "mean concave points",
+      "mean symmetry",
+      "mean fractal dimension",
+      "radius error",
+      "texture error",
+      "perimeter error",
+      "area error",
+      "smoothness error",
+      "compactness error",
+      "concavity error",
+      "concave points error",
+      "symmetry error",
+      "fractal dimension error",
+      "worst radius",
+      "worst texture",
+      "worst perimeter",
+      "worst area",
+      "worst smoothness",
+      "worst compactness",
+      "worst concavity",
+      "worst concave points",
+      "worst symmetry",
+      "worst fractal dimension"
+    ],
+    "feature_stats": {
+      "mean radius": {
+        "name": "mean radius",
+        "category": "Mean",
+        "group": "mean",
+        "overall": {
+          "mean": 14.1273,
+          "std": 3.521,
+          "min": 6.981,
+          "q25": 11.7,
+          "median": 13.37,
+          "q75": 15.78,
+          "max": 28.11
+        },
+        "benign": {
+          "mean": 12.1465,
+          "std": 1.778,
+          "median": 12.2,
+          "min": 6.981,
+          "max": 17.85
+        },
+        "malignant": {
+          "mean": 17.4628,
+          "std": 3.1964,
+          "median": 17.325,
+          "min": 10.95,
+          "max": 28.11
+        }
+      },
+      "mean texture": {
+        "name": "mean texture",
+        "category": "Mean",
+        "group": "mean",
+        "overall": {
+          "mean": 19.2896,
+          "std": 4.2973,
+          "min": 9.71,
+          "q25": 16.17,
+          "median": 18.84,
+          "q75": 21.8,
+          "max": 39.28
+        },
+        "benign": {
+          "mean": 17.9148,
+          "std": 3.9895,
+          "median": 17.39,
+          "min": 9.71,
+          "max": 33.81
+        },
+        "malignant": {
+          "mean": 21.6049,
+          "std": 3.7705,
+          "median": 21.46,
+          "min": 10.38,
+          "max": 39.28
+        }
+      },
+      "mean perimeter": {
+        "name": "mean perimeter",
+        "category": "Mean",
+        "group": "mean",
+        "overall": {
+          "mean": 91.969,
+          "std": 24.2776,
+          "min": 43.79,
+          "q25": 75.17,
+          "median": 86.24,
+          "q75": 104.1,
+          "max": 188.5
+        },
+        "benign": {
+          "mean": 78.0754,
+          "std": 11.7909,
+          "median": 78.18,
+          "min": 43.79,
+          "max": 114.6
+        },
+        "malignant": {
+          "mean": 115.3654,
+          "std": 21.803,
+          "median": 114.2,
+          "min": 71.9,
+          "max": 188.5
+        }
+      },
+      "mean area": {
+        "name": "mean area",
+        "category": "Mean",
+        "group": "mean",
+        "overall": {
+          "mean": 654.8891,
+          "std": 351.6048,
+          "min": 143.5,
+          "q25": 420.3,
+          "median": 551.1,
+          "q75": 782.7,
+          "max": 2501.0
+        },
+        "benign": {
+          "mean": 462.7902,
+          "std": 134.0989,
+          "median": 458.4,
+          "min": 143.5,
+          "max": 992.1
+        },
+        "malignant": {
+          "mean": 978.3764,
+          "std": 367.0692,
+          "median": 932.0,
+          "min": 361.6,
+          "max": 2501.0
+        }
+      },
+      "mean smoothness": {
+        "name": "mean smoothness",
+        "category": "Mean",
+        "group": "mean",
+        "overall": {
+          "mean": 0.0964,
+          "std": 0.0141,
+          "min": 0.0526,
+          "q25": 0.0864,
+          "median": 0.0959,
+          "q75": 0.1053,
+          "max": 0.1634
+        },
+        "benign": {
+          "mean": 0.0925,
+          "std": 0.0134,
+          "median": 0.0908,
+          "min": 0.0526,
+          "max": 0.1634
+        },
+        "malignant": {
+          "mean": 0.1029,
+          "std": 0.0126,
+          "median": 0.1022,
+          "min": 0.0737,
+          "max": 0.1447
+        }
+      },
+      "mean compactness": {
+        "name": "mean compactness",
+        "category": "Mean",
+        "group": "mean",
+        "overall": {
+          "mean": 0.1043,
+          "std": 0.0528,
+          "min": 0.0194,
+          "q25": 0.0649,
+          "median": 0.0926,
+          "q75": 0.1304,
+          "max": 0.3454
+        },
+        "benign": {
+          "mean": 0.0801,
+          "std": 0.0337,
+          "median": 0.0753,
+          "min": 0.0194,
+          "max": 0.2239
+        },
+        "malignant": {
+          "mean": 0.1452,
+          "std": 0.0539,
+          "median": 0.1323,
+          "min": 0.0461,
+          "max": 0.3454
+        }
+      },
+      "mean concavity": {
+        "name": "mean concavity",
+        "category": "Mean",
+        "group": "mean",
+        "overall": {
+          "mean": 0.0888,
+          "std": 0.0796,
+          "min": 0.0,
+          "q25": 0.0296,
+          "median": 0.0615,
+          "q75": 0.1307,
+          "max": 0.4268
+        },
+        "benign": {
+          "mean": 0.0461,
+          "std": 0.0434,
+          "median": 0.0371,
+          "min": 0.0,
+          "max": 0.4108
+        },
+        "malignant": {
+          "mean": 0.1608,
+          "std": 0.0748,
+          "median": 0.1513,
+          "min": 0.024,
+          "max": 0.4268
+        }
+      },
+      "mean concave points": {
+        "name": "mean concave points",
+        "category": "Mean",
+        "group": "mean",
+        "overall": {
+          "mean": 0.0489,
+          "std": 0.0388,
+          "min": 0.0,
+          "q25": 0.0203,
+          "median": 0.0335,
+          "q75": 0.074,
+          "max": 0.2012
+        },
+        "benign": {
+          "mean": 0.0257,
+          "std": 0.0159,
+          "median": 0.0234,
+          "min": 0.0,
+          "max": 0.0853
+        },
+        "malignant": {
+          "mean": 0.088,
+          "std": 0.0343,
+          "median": 0.0863,
+          "min": 0.0203,
+          "max": 0.2012
+        }
+      },
+      "mean symmetry": {
+        "name": "mean symmetry",
+        "category": "Mean",
+        "group": "mean",
+        "overall": {
+          "mean": 0.1812,
+          "std": 0.0274,
+          "min": 0.106,
+          "q25": 0.1619,
+          "median": 0.1792,
+          "q75": 0.1957,
+          "max": 0.304
+        },
+        "benign": {
+          "mean": 0.1742,
+          "std": 0.0248,
+          "median": 0.1714,
+          "min": 0.106,
+          "max": 0.2743
+        },
+        "malignant": {
+          "mean": 0.1929,
+          "std": 0.0276,
+          "median": 0.1899,
+          "min": 0.1308,
+          "max": 0.304
+        }
+      },
+      "mean fractal dimension": {
+        "name": "mean fractal dimension",
+        "category": "Mean",
+        "group": "mean",
+        "overall": {
+          "mean": 0.0628,
+          "std": 0.0071,
+          "min": 0.05,
+          "q25": 0.0577,
+          "median": 0.0615,
+          "q75": 0.0661,
+          "max": 0.0974
+        },
+        "benign": {
+          "mean": 0.0629,
+          "std": 0.0067,
+          "median": 0.0615,
+          "min": 0.0519,
+          "max": 0.0958
+        },
+        "malignant": {
+          "mean": 0.0627,
+          "std": 0.0076,
+          "median": 0.0616,
+          "min": 0.05,
+          "max": 0.0974
+        }
+      },
+      "radius error": {
+        "name": "radius error",
+        "category": "Standard Error (SE)",
+        "group": "se",
+        "overall": {
+          "mean": 0.4052,
+          "std": 0.2771,
+          "min": 0.1115,
+          "q25": 0.2324,
+          "median": 0.3242,
+          "q75": 0.4789,
+          "max": 2.873
+        },
+        "benign": {
+          "mean": 0.2841,
+          "std": 0.1124,
+          "median": 0.2575,
+          "min": 0.1115,
+          "max": 0.8811
+        },
+        "malignant": {
+          "mean": 0.6091,
+          "std": 0.3442,
+          "median": 0.5472,
+          "min": 0.1938,
+          "max": 2.873
+        }
+      },
+      "texture error": {
+        "name": "texture error",
+        "category": "Standard Error (SE)",
+        "group": "se",
+        "overall": {
+          "mean": 1.2169,
+          "std": 0.5512,
+          "min": 0.3602,
+          "q25": 0.8339,
+          "median": 1.108,
+          "q75": 1.474,
+          "max": 4.885
+        },
+        "benign": {
+          "mean": 1.2204,
+          "std": 0.5884,
+          "median": 1.108,
+          "min": 0.3602,
+          "max": 4.885
+        },
+        "malignant": {
+          "mean": 1.2109,
+          "std": 0.482,
+          "median": 1.1025,
+          "min": 0.3621,
+          "max": 3.568
+        }
+      },
+      "perimeter error": {
+        "name": "perimeter error",
+        "category": "Standard Error (SE)",
+        "group": "se",
+        "overall": {
+          "mean": 2.8661,
+          "std": 2.0201,
+          "min": 0.757,
+          "q25": 1.606,
+          "median": 2.287,
+          "q75": 3.357,
+          "max": 21.98
+        },
+        "benign": {
+          "mean": 2.0003,
+          "std": 0.7701,
+          "median": 1.851,
+          "min": 0.757,
+          "max": 5.118
+        },
+        "malignant": {
+          "mean": 4.3239,
+          "std": 2.5625,
+          "median": 3.6795,
+          "min": 1.334,
+          "max": 21.98
+        }
+      },
+      "area error": {
+        "name": "area error",
+        "category": "Standard Error (SE)",
+        "group": "se",
+        "overall": {
+          "mean": 40.3371,
+          "std": 45.451,
+          "min": 6.802,
+          "q25": 17.85,
+          "median": 24.53,
+          "q75": 45.19,
+          "max": 542.2
+        },
+        "benign": {
+          "mean": 21.1351,
+          "std": 8.8311,
+          "median": 19.63,
+          "min": 6.802,
+          "max": 77.11
+        },
+        "malignant": {
+          "mean": 72.6724,
+          "std": 61.2104,
+          "median": 58.455,
+          "min": 13.99,
+          "max": 542.2
+        }
+      },
+      "smoothness error": {
+        "name": "smoothness error",
+        "category": "Standard Error (SE)",
+        "group": "se",
+        "overall": {
+          "mean": 0.007,
+          "std": 0.003,
+          "min": 0.0017,
+          "q25": 0.0052,
+          "median": 0.0064,
+          "q75": 0.0081,
+          "max": 0.0311
+        },
+        "benign": {
+          "mean": 0.0072,
+          "std": 0.0031,
+          "median": 0.0065,
+          "min": 0.0017,
+          "max": 0.0218
+        },
+        "malignant": {
+          "mean": 0.0068,
+          "std": 0.0029,
+          "median": 0.0062,
+          "min": 0.0027,
+          "max": 0.0311
+        }
+      },
+      "compactness error": {
+        "name": "compactness error",
+        "category": "Standard Error (SE)",
+        "group": "se",
+        "overall": {
+          "mean": 0.0255,
+          "std": 0.0179,
+          "min": 0.0023,
+          "q25": 0.0131,
+          "median": 0.0204,
+          "q75": 0.0324,
+          "max": 0.1354
+        },
+        "benign": {
+          "mean": 0.0214,
+          "std": 0.0163,
+          "median": 0.0163,
+          "min": 0.0023,
+          "max": 0.1064
+        },
+        "malignant": {
+          "mean": 0.0323,
+          "std": 0.0183,
+          "median": 0.0286,
+          "min": 0.0084,
+          "max": 0.1354
+        }
+      },
+      "concavity error": {
+        "name": "concavity error",
+        "category": "Standard Error (SE)",
+        "group": "se",
+        "overall": {
+          "mean": 0.0319,
+          "std": 0.0302,
+          "min": 0.0,
+          "q25": 0.0151,
+          "median": 0.0259,
+          "q75": 0.042,
+          "max": 0.396
+        },
+        "benign": {
+          "mean": 0.026,
+          "std": 0.0329,
+          "median": 0.0184,
+          "min": 0.0,
+          "max": 0.396
+        },
+        "malignant": {
+          "mean": 0.0418,
+          "std": 0.0216,
+          "median": 0.0371,
+          "min": 0.011,
+          "max": 0.1438
+        }
+      },
+      "concave points error": {
+        "name": "concave points error",
+        "category": "Standard Error (SE)",
+        "group": "se",
+        "overall": {
+          "mean": 0.0118,
+          "std": 0.0062,
+          "min": 0.0,
+          "q25": 0.0076,
+          "median": 0.0109,
+          "q75": 0.0147,
+          "max": 0.0528
+        },
+        "benign": {
+          "mean": 0.0099,
+          "std": 0.0057,
+          "median": 0.0091,
+          "min": 0.0,
+          "max": 0.0528
+        },
+        "malignant": {
+          "mean": 0.0151,
+          "std": 0.0055,
+          "median": 0.0142,
+          "min": 0.0052,
+          "max": 0.0409
+        }
+      },
+      "symmetry error": {
+        "name": "symmetry error",
+        "category": "Standard Error (SE)",
+        "group": "se",
+        "overall": {
+          "mean": 0.0205,
+          "std": 0.0083,
+          "min": 0.0079,
+          "q25": 0.0152,
+          "median": 0.0187,
+          "q75": 0.0235,
+          "max": 0.079
+        },
+        "benign": {
+          "mean": 0.0206,
+          "std": 0.007,
+          "median": 0.0191,
+          "min": 0.0095,
+          "max": 0.0615
+        },
+        "malignant": {
+          "mean": 0.0205,
+          "std": 0.01,
+          "median": 0.0177,
+          "min": 0.0079,
+          "max": 0.079
+        }
+      },
+      "fractal dimension error": {
+        "name": "fractal dimension error",
+        "category": "Standard Error (SE)",
+        "group": "se",
+        "overall": {
+          "mean": 0.0038,
+          "std": 0.0026,
+          "min": 0.0009,
+          "q25": 0.0022,
+          "median": 0.0032,
+          "q75": 0.0046,
+          "max": 0.0298
+        },
+        "benign": {
+          "mean": 0.0036,
+          "std": 0.0029,
+          "median": 0.0028,
+          "min": 0.0009,
+          "max": 0.0298
+        },
+        "malignant": {
+          "mean": 0.0041,
+          "std": 0.002,
+          "median": 0.0037,
+          "min": 0.0011,
+          "max": 0.0128
+        }
+      },
+      "worst radius": {
+        "name": "worst radius",
+        "category": "Extreme / Worst",
+        "group": "worst",
+        "overall": {
+          "mean": 16.2692,
+          "std": 4.829,
+          "min": 7.93,
+          "q25": 13.01,
+          "median": 14.97,
+          "q75": 18.79,
+          "max": 36.04
+        },
+        "benign": {
+          "mean": 13.3798,
+          "std": 1.9786,
+          "median": 13.35,
+          "min": 7.93,
+          "max": 19.82
+        },
+        "malignant": {
+          "mean": 21.1348,
+          "std": 4.2735,
+          "median": 20.59,
+          "min": 12.84,
+          "max": 36.04
+        }
+      },
+      "worst texture": {
+        "name": "worst texture",
+        "category": "Extreme / Worst",
+        "group": "worst",
+        "overall": {
+          "mean": 25.6772,
+          "std": 6.1409,
+          "min": 12.02,
+          "q25": 21.08,
+          "median": 25.41,
+          "q75": 29.72,
+          "max": 49.54
+        },
+        "benign": {
+          "mean": 23.5151,
+          "std": 5.4863,
+          "median": 22.82,
+          "min": 12.02,
+          "max": 41.78
+        },
+        "malignant": {
+          "mean": 29.3182,
+          "std": 5.422,
+          "median": 28.945,
+          "min": 16.67,
+          "max": 49.54
+        }
+      },
+      "worst perimeter": {
+        "name": "worst perimeter",
+        "category": "Extreme / Worst",
+        "group": "worst",
+        "overall": {
+          "mean": 107.2612,
+          "std": 33.573,
+          "min": 50.41,
+          "q25": 84.11,
+          "median": 97.66,
+          "q75": 125.4,
+          "max": 251.2
+        },
+        "benign": {
+          "mean": 87.0059,
+          "std": 13.5081,
+          "median": 86.92,
+          "min": 50.41,
+          "max": 127.1
+        },
+        "malignant": {
+          "mean": 141.3703,
+          "std": 29.3875,
+          "median": 138.0,
+          "min": 85.1,
+          "max": 251.2
+        }
+      },
+      "worst area": {
+        "name": "worst area",
+        "category": "Extreme / Worst",
+        "group": "worst",
+        "overall": {
+          "mean": 880.5831,
+          "std": 568.8565,
+          "min": 185.2,
+          "q25": 515.3,
+          "median": 686.5,
+          "q75": 1084.0,
+          "max": 4254.0
+        },
+        "benign": {
+          "mean": 558.8994,
+          "std": 163.3721,
+          "median": 547.4,
+          "min": 185.2,
+          "max": 1210.0
+        },
+        "malignant": {
+          "mean": 1422.2863,
+          "std": 596.5558,
+          "median": 1303.0,
+          "min": 508.1,
+          "max": 4254.0
+        }
+      },
+      "worst smoothness": {
+        "name": "worst smoothness",
+        "category": "Extreme / Worst",
+        "group": "worst",
+        "overall": {
+          "mean": 0.1324,
+          "std": 0.0228,
+          "min": 0.0712,
+          "q25": 0.1166,
+          "median": 0.1313,
+          "q75": 0.146,
+          "max": 0.2226
+        },
+        "benign": {
+          "mean": 0.125,
+          "std": 0.02,
+          "median": 0.1254,
+          "min": 0.0712,
+          "max": 0.2006
+        },
+        "malignant": {
+          "mean": 0.1448,
+          "std": 0.0218,
+          "median": 0.1434,
+          "min": 0.0882,
+          "max": 0.2226
+        }
+      },
+      "worst compactness": {
+        "name": "worst compactness",
+        "category": "Extreme / Worst",
+        "group": "worst",
+        "overall": {
+          "mean": 0.2543,
+          "std": 0.1572,
+          "min": 0.0273,
+          "q25": 0.1472,
+          "median": 0.2119,
+          "q75": 0.3391,
+          "max": 1.058
+        },
+        "benign": {
+          "mean": 0.1827,
+          "std": 0.0921,
+          "median": 0.1698,
+          "min": 0.0273,
+          "max": 0.5849
+        },
+        "malignant": {
+          "mean": 0.3748,
+          "std": 0.17,
+          "median": 0.3564,
+          "min": 0.0513,
+          "max": 1.058
+        }
+      },
+      "worst concavity": {
+        "name": "worst concavity",
+        "category": "Extreme / Worst",
+        "group": "worst",
+        "overall": {
+          "mean": 0.2722,
+          "std": 0.2084,
+          "min": 0.0,
+          "q25": 0.1145,
+          "median": 0.2267,
+          "q75": 0.3829,
+          "max": 1.252
+        },
+        "benign": {
+          "mean": 0.1662,
+          "std": 0.1402,
+          "median": 0.1412,
+          "min": 0.0,
+          "max": 1.252
+        },
+        "malignant": {
+          "mean": 0.4506,
+          "std": 0.1811,
+          "median": 0.4049,
+          "min": 0.024,
+          "max": 1.17
+        }
+      },
+      "worst concave points": {
+        "name": "worst concave points",
+        "category": "Extreme / Worst",
+        "group": "worst",
+        "overall": {
+          "mean": 0.1146,
+          "std": 0.0657,
+          "min": 0.0,
+          "q25": 0.0649,
+          "median": 0.0999,
+          "q75": 0.1614,
+          "max": 0.291
+        },
+        "benign": {
+          "mean": 0.0744,
+          "std": 0.0357,
+          "median": 0.0743,
+          "min": 0.0,
+          "max": 0.175
+        },
+        "malignant": {
+          "mean": 0.1822,
+          "std": 0.0462,
+          "median": 0.182,
+          "min": 0.029,
+          "max": 0.291
+        }
+      },
+      "worst symmetry": {
+        "name": "worst symmetry",
+        "category": "Extreme / Worst",
+        "group": "worst",
+        "overall": {
+          "mean": 0.2901,
+          "std": 0.0618,
+          "min": 0.1565,
+          "q25": 0.2504,
+          "median": 0.2822,
+          "q75": 0.3179,
+          "max": 0.6638
+        },
+        "benign": {
+          "mean": 0.2702,
+          "std": 0.0417,
+          "median": 0.2687,
+          "min": 0.1566,
+          "max": 0.4228
+        },
+        "malignant": {
+          "mean": 0.3235,
+          "std": 0.0745,
+          "median": 0.3103,
+          "min": 0.1565,
+          "max": 0.6638
+        }
+      },
+      "worst fractal dimension": {
+        "name": "worst fractal dimension",
+        "category": "Extreme / Worst",
+        "group": "worst",
+        "overall": {
+          "mean": 0.0839,
+          "std": 0.018,
+          "min": 0.055,
+          "q25": 0.0715,
+          "median": 0.08,
+          "q75": 0.0921,
+          "max": 0.2075
+        },
+        "benign": {
+          "mean": 0.0794,
+          "std": 0.0138,
+          "median": 0.0771,
+          "min": 0.0552,
+          "max": 0.1486
+        },
+        "malignant": {
+          "mean": 0.0915,
+          "std": 0.0215,
+          "median": 0.0876,
+          "min": 0.055,
+          "max": 0.2075
+        }
+      }
+    },
+    "presets": {
+      "typical_benign": {
+        "mean radius": 12.2,
+        "mean texture": 17.39,
+        "mean perimeter": 78.18,
+        "mean area": 458.4,
+        "mean smoothness": 0.0908,
+        "mean compactness": 0.0753,
+        "mean concavity": 0.0371,
+        "mean concave points": 0.0234,
+        "mean symmetry": 0.1714,
+        "mean fractal dimension": 0.0615,
+        "radius error": 0.2575,
+        "texture error": 1.108,
+        "perimeter error": 1.851,
+        "area error": 19.63,
+        "smoothness error": 0.0065,
+        "compactness error": 0.0163,
+        "concavity error": 0.0184,
+        "concave points error": 0.0091,
+        "symmetry error": 0.0191,
+        "fractal dimension error": 0.0028,
+        "worst radius": 13.35,
+        "worst texture": 22.82,
+        "worst perimeter": 86.92,
+        "worst area": 547.4,
+        "worst smoothness": 0.1254,
+        "worst compactness": 0.1698,
+        "worst concavity": 0.1412,
+        "worst concave points": 0.0743,
+        "worst symmetry": 0.2687,
+        "worst fractal dimension": 0.0771
+      },
+      "typical_malignant": {
+        "mean radius": 17.325,
+        "mean texture": 21.46,
+        "mean perimeter": 114.2,
+        "mean area": 932.0,
+        "mean smoothness": 0.1022,
+        "mean compactness": 0.1323,
+        "mean concavity": 0.1513,
+        "mean concave points": 0.0863,
+        "mean symmetry": 0.1899,
+        "mean fractal dimension": 0.0616,
+        "radius error": 0.5472,
+        "texture error": 1.1025,
+        "perimeter error": 3.6795,
+        "area error": 58.455,
+        "smoothness error": 0.0062,
+        "compactness error": 0.0286,
+        "concavity error": 0.0371,
+        "concave points error": 0.0142,
+        "symmetry error": 0.0177,
+        "fractal dimension error": 0.0037,
+        "worst radius": 20.59,
+        "worst texture": 28.945,
+        "worst perimeter": 138.0,
+        "worst area": 1303.0,
+        "worst smoothness": 0.1434,
+        "worst compactness": 0.3564,
+        "worst concavity": 0.4049,
+        "worst concave points": 0.182,
+        "worst symmetry": 0.3103,
+        "worst fractal dimension": 0.0876
+      },
+      "borderline_ambiguous": {
+        "mean radius": 14.7625,
+        "mean texture": 19.425,
+        "mean perimeter": 96.19,
+        "mean area": 695.2,
+        "mean smoothness": 0.0965,
+        "mean compactness": 0.1038,
+        "mean concavity": 0.0942,
+        "mean concave points": 0.0549,
+        "mean symmetry": 0.1807,
+        "mean fractal dimension": 0.0616,
+        "radius error": 0.4023,
+        "texture error": 1.1053,
+        "perimeter error": 2.7652,
+        "area error": 39.0425,
+        "smoothness error": 0.0063,
+        "compactness error": 0.0224,
+        "concavity error": 0.0278,
+        "concave points error": 0.0117,
+        "symmetry error": 0.0184,
+        "fractal dimension error": 0.0033,
+        "worst radius": 16.97,
+        "worst texture": 25.8825,
+        "worst perimeter": 112.46,
+        "worst area": 925.2,
+        "worst smoothness": 0.1344,
+        "worst compactness": 0.2631,
+        "worst concavity": 0.2731,
+        "worst concave points": 0.1281,
+        "worst symmetry": 0.2895,
+        "worst fractal dimension": 0.0824
+      }
+    }
+  },
+  "correlations": {
+    "features": [
+      "mean radius",
+      "mean texture",
+      "mean perimeter",
+      "mean area",
+      "mean smoothness",
+      "mean compactness",
+      "mean concavity",
+      "mean concave points",
+      "mean symmetry",
+      "mean fractal dimension",
+      "radius error",
+      "texture error",
+      "perimeter error",
+      "area error",
+      "smoothness error",
+      "compactness error",
+      "concavity error",
+      "concave points error",
+      "symmetry error",
+      "fractal dimension error",
+      "worst radius",
+      "worst texture",
+      "worst perimeter",
+      "worst area",
+      "worst smoothness",
+      "worst compactness",
+      "worst concavity",
+      "worst concave points",
+      "worst symmetry",
+      "worst fractal dimension"
+    ],
+    "matrix": [
+      [
+        1.0,
+        0.324,
+        0.998,
+        0.987,
+        0.171,
+        0.506,
+        0.677,
+        0.823,
+        0.148,
+        -0.312,
+        0.679,
+        -0.097,
+        0.674,
+        0.736,
+        -0.223,
+        0.206,
+        0.194,
+        0.376,
+        -0.104,
+        -0.043,
+        0.97,
+        0.297,
+        0.965,
+        0.941,
+        0.12,
+        0.413,
+        0.527,
+        0.744,
+        0.164,
+        0.007
+      ],
+      [
+        0.324,
+        1.0,
+        0.33,
+        0.321,
+        -0.023,
+        0.237,
+        0.302,
+        0.293,
+        0.071,
+        -0.076,
+        0.276,
+        0.386,
+        0.282,
+        0.26,
+        0.007,
+        0.192,
+        0.143,
+        0.164,
+        0.009,
+        0.054,
+        0.353,
+        0.912,
+        0.358,
+        0.344,
+        0.078,
+        0.278,
+        0.301,
+        0.295,
+        0.105,
+        0.119
+      ],
+      [
+        0.998,
+        0.33,
+        1.0,
+        0.987,
+        0.207,
+        0.557,
+        0.716,
+        0.851,
+        0.183,
+        -0.261,
+        0.692,
+        -0.087,
+        0.693,
+        0.745,
+        -0.203,
+        0.251,
+        0.228,
+        0.407,
+        -0.082,
+        -0.006,
+        0.969,
+        0.303,
+        0.97,
+        0.942,
+        0.151,
+        0.456,
+        0.564,
+        0.771,
+        0.189,
+        0.051
+      ],
+      [
+        0.987,
+        0.321,
+        0.987,
+        1.0,
+        0.177,
+        0.499,
+        0.686,
+        0.823,
+        0.151,
+        -0.283,
+        0.733,
+        -0.066,
+        0.727,
+        0.8,
+        -0.167,
+        0.213,
+        0.208,
+        0.372,
+        -0.072,
+        -0.02,
+        0.963,
+        0.287,
+        0.959,
+        0.959,
+        0.124,
+        0.39,
+        0.513,
+        0.722,
+        0.144,
+        0.004
+      ],
+      [
+        0.171,
+        -0.023,
+        0.207,
+        0.177,
+        1.0,
+        0.659,
+        0.522,
+        0.554,
+        0.558,
+        0.585,
+        0.301,
+        0.068,
+        0.296,
+        0.247,
+        0.332,
+        0.319,
+        0.248,
+        0.381,
+        0.201,
+        0.284,
+        0.213,
+        0.036,
+        0.239,
+        0.207,
+        0.805,
+        0.472,
+        0.435,
+        0.503,
+        0.394,
+        0.499
+      ],
+      [
+        0.506,
+        0.237,
+        0.557,
+        0.499,
+        0.659,
+        1.0,
+        0.883,
+        0.831,
+        0.603,
+        0.565,
+        0.497,
+        0.046,
+        0.549,
+        0.456,
+        0.135,
+        0.739,
+        0.571,
+        0.642,
+        0.23,
+        0.507,
+        0.535,
+        0.248,
+        0.59,
+        0.51,
+        0.566,
+        0.866,
+        0.816,
+        0.816,
+        0.51,
+        0.687
+      ],
+      [
+        0.677,
+        0.302,
+        0.716,
+        0.686,
+        0.522,
+        0.883,
+        1.0,
+        0.921,
+        0.501,
+        0.337,
+        0.632,
+        0.076,
+        0.66,
+        0.617,
+        0.099,
+        0.67,
+        0.691,
+        0.683,
+        0.178,
+        0.449,
+        0.688,
+        0.3,
+        0.73,
+        0.676,
+        0.449,
+        0.755,
+        0.884,
+        0.861,
+        0.409,
+        0.515
+      ],
+      [
+        0.823,
+        0.293,
+        0.851,
+        0.823,
+        0.554,
+        0.831,
+        0.921,
+        1.0,
+        0.462,
+        0.167,
+        0.698,
+        0.021,
+        0.711,
+        0.69,
+        0.028,
+        0.49,
+        0.439,
+        0.616,
+        0.095,
+        0.258,
+        0.83,
+        0.293,
+        0.856,
+        0.81,
+        0.453,
+        0.667,
+        0.752,
+        0.91,
+        0.376,
+        0.369
+      ],
+      [
+        0.148,
+        0.071,
+        0.183,
+        0.151,
+        0.558,
+        0.603,
+        0.501,
+        0.462,
+        1.0,
+        0.48,
+        0.303,
+        0.128,
+        0.314,
+        0.224,
+        0.187,
+        0.422,
+        0.343,
+        0.393,
+        0.449,
+        0.332,
+        0.186,
+        0.091,
+        0.219,
+        0.177,
+        0.427,
+        0.473,
+        0.434,
+        0.43,
+        0.7,
+        0.438
+      ],
+      [
+        -0.312,
+        -0.076,
+        -0.261,
+        -0.283,
+        0.585,
+        0.565,
+        0.337,
+        0.167,
+        0.48,
+        1.0,
+        0.0,
+        0.164,
+        0.04,
+        -0.09,
+        0.402,
+        0.56,
+        0.447,
+        0.341,
+        0.345,
+        0.688,
+        -0.254,
+        -0.051,
+        -0.205,
+        -0.232,
+        0.505,
+        0.459,
+        0.346,
+        0.175,
+        0.334,
+        0.767
+      ],
+      [
+        0.679,
+        0.276,
+        0.692,
+        0.733,
+        0.301,
+        0.497,
+        0.632,
+        0.698,
+        0.303,
+        0.0,
+        1.0,
+        0.213,
+        0.973,
+        0.952,
+        0.165,
+        0.356,
+        0.332,
+        0.513,
+        0.241,
+        0.228,
+        0.715,
+        0.195,
+        0.72,
+        0.752,
+        0.142,
+        0.287,
+        0.381,
+        0.531,
+        0.095,
+        0.05
+      ],
+      [
+        -0.097,
+        0.386,
+        -0.087,
+        -0.066,
+        0.068,
+        0.046,
+        0.076,
+        0.021,
+        0.128,
+        0.164,
+        0.213,
+        1.0,
+        0.223,
+        0.112,
+        0.397,
+        0.232,
+        0.195,
+        0.23,
+        0.412,
+        0.28,
+        -0.112,
+        0.409,
+        -0.102,
+        -0.083,
+        -0.074,
+        -0.092,
+        -0.069,
+        -0.12,
+        -0.128,
+        -0.046
+      ],
+      [
+        0.674,
+        0.282,
+        0.693,
+        0.727,
+        0.296,
+        0.549,
+        0.66,
+        0.711,
+        0.314,
+        0.04,
+        0.973,
+        0.223,
+        1.0,
+        0.938,
+        0.151,
+        0.416,
+        0.362,
+        0.556,
+        0.266,
+        0.244,
+        0.697,
+        0.2,
+        0.721,
+        0.731,
+        0.13,
+        0.342,
+        0.419,
+        0.555,
+        0.11,
+        0.085
+      ],
+      [
+        0.736,
+        0.26,
+        0.745,
+        0.8,
+        0.247,
+        0.456,
+        0.617,
+        0.69,
+        0.224,
+        -0.09,
+        0.952,
+        0.112,
+        0.938,
+        1.0,
+        0.075,
+        0.285,
+        0.271,
+        0.416,
+        0.134,
+        0.127,
+        0.757,
+        0.196,
+        0.761,
+        0.811,
+        0.125,
+        0.283,
+        0.385,
+        0.538,
+        0.074,
+        0.018
+      ],
+      [
+        -0.223,
+        0.007,
+        -0.203,
+        -0.167,
+        0.332,
+        0.135,
+        0.099,
+        0.028,
+        0.187,
+        0.402,
+        0.165,
+        0.397,
+        0.151,
+        0.075,
+        1.0,
+        0.337,
+        0.269,
+        0.328,
+        0.414,
+        0.427,
+        -0.231,
+        -0.075,
+        -0.217,
+        -0.182,
+        0.314,
+        -0.056,
+        -0.058,
+        -0.102,
+        -0.107,
+        0.101
+      ],
+      [
+        0.206,
+        0.192,
+        0.251,
+        0.213,
+        0.319,
+        0.739,
+        0.67,
+        0.49,
+        0.422,
+        0.56,
+        0.356,
+        0.232,
+        0.416,
+        0.285,
+        0.337,
+        1.0,
+        0.801,
+        0.744,
+        0.395,
+        0.803,
+        0.205,
+        0.143,
+        0.261,
+        0.199,
+        0.227,
+        0.679,
+        0.639,
+        0.483,
+        0.278,
+        0.591
+      ],
+      [
+        0.194,
+        0.143,
+        0.228,
+        0.208,
+        0.248,
+        0.571,
+        0.691,
+        0.439,
+        0.343,
+        0.447,
+        0.332,
+        0.195,
+        0.362,
+        0.271,
+        0.269,
+        0.801,
+        1.0,
+        0.772,
+        0.309,
+        0.727,
+        0.187,
+        0.1,
+        0.227,
+        0.188,
+        0.168,
+        0.485,
+        0.663,
+        0.44,
+        0.198,
+        0.439
+      ],
+      [
+        0.376,
+        0.164,
+        0.407,
+        0.372,
+        0.381,
+        0.642,
+        0.683,
+        0.616,
+        0.393,
+        0.341,
+        0.513,
+        0.23,
+        0.556,
+        0.416,
+        0.328,
+        0.744,
+        0.772,
+        1.0,
+        0.313,
+        0.611,
+        0.358,
+        0.087,
+        0.395,
+        0.342,
+        0.215,
+        0.453,
+        0.55,
+        0.602,
+        0.143,
+        0.311
+      ],
+      [
+        -0.104,
+        0.009,
+        -0.082,
+        -0.072,
+        0.201,
+        0.23,
+        0.178,
+        0.095,
+        0.449,
+        0.345,
+        0.241,
+        0.412,
+        0.266,
+        0.134,
+        0.414,
+        0.395,
+        0.309,
+        0.313,
+        1.0,
+        0.369,
+        -0.128,
+        -0.077,
+        -0.104,
+        -0.11,
+        -0.013,
+        0.06,
+        0.037,
+        -0.03,
+        0.389,
+        0.078
+      ],
+      [
+        -0.043,
+        0.054,
+        -0.006,
+        -0.02,
+        0.284,
+        0.507,
+        0.449,
+        0.258,
+        0.332,
+        0.688,
+        0.228,
+        0.28,
+        0.244,
+        0.127,
+        0.427,
+        0.803,
+        0.727,
+        0.611,
+        0.369,
+        1.0,
+        -0.037,
+        -0.003,
+        -0.001,
+        -0.023,
+        0.171,
+        0.39,
+        0.38,
+        0.215,
+        0.111,
+        0.591
+      ],
+      [
+        0.97,
+        0.353,
+        0.969,
+        0.963,
+        0.213,
+        0.535,
+        0.688,
+        0.83,
+        0.186,
+        -0.254,
+        0.715,
+        -0.112,
+        0.697,
+        0.757,
+        -0.231,
+        0.205,
+        0.187,
+        0.358,
+        -0.128,
+        -0.037,
+        1.0,
+        0.36,
+        0.994,
+        0.984,
+        0.217,
+        0.476,
+        0.574,
+        0.787,
+        0.244,
+        0.093
+      ],
+      [
+        0.297,
+        0.912,
+        0.303,
+        0.287,
+        0.036,
+        0.248,
+        0.3,
+        0.293,
+        0.091,
+        -0.051,
+        0.195,
+        0.409,
+        0.2,
+        0.196,
+        -0.075,
+        0.143,
+        0.1,
+        0.087,
+        -0.077,
+        -0.003,
+        0.36,
+        1.0,
+        0.365,
+        0.346,
+        0.225,
+        0.361,
+        0.368,
+        0.36,
+        0.233,
+        0.219
+      ],
+      [
+        0.965,
+        0.358,
+        0.97,
+        0.959,
+        0.239,
+        0.59,
+        0.73,
+        0.856,
+        0.219,
+        -0.205,
+        0.72,
+        -0.102,
+        0.721,
+        0.761,
+        -0.217,
+        0.261,
+        0.227,
+        0.395,
+        -0.104,
+        -0.001,
+        0.994,
+        0.365,
+        1.0,
+        0.978,
+        0.237,
+        0.529,
+        0.618,
+        0.816,
+        0.269,
+        0.139
+      ],
+      [
+        0.941,
+        0.344,
+        0.942,
+        0.959,
+        0.207,
+        0.51,
+        0.676,
+        0.81,
+        0.177,
+        -0.232,
+        0.752,
+        -0.083,
+        0.731,
+        0.811,
+        -0.182,
+        0.199,
+        0.188,
+        0.342,
+        -0.11,
+        -0.023,
+        0.984,
+        0.346,
+        0.978,
+        1.0,
+        0.209,
+        0.438,
+        0.543,
+        0.747,
+        0.209,
+        0.08
+      ],
+      [
+        0.12,
+        0.078,
+        0.151,
+        0.124,
+        0.805,
+        0.566,
+        0.449,
+        0.453,
+        0.427,
+        0.505,
+        0.142,
+        -0.074,
+        0.13,
+        0.125,
+        0.314,
+        0.227,
+        0.168,
+        0.215,
+        -0.013,
+        0.171,
+        0.217,
+        0.225,
+        0.237,
+        0.209,
+        1.0,
+        0.568,
+        0.519,
+        0.548,
+        0.494,
+        0.618
+      ],
+      [
+        0.413,
+        0.278,
+        0.456,
+        0.39,
+        0.472,
+        0.866,
+        0.755,
+        0.667,
+        0.473,
+        0.459,
+        0.287,
+        -0.092,
+        0.342,
+        0.283,
+        -0.056,
+        0.679,
+        0.485,
+        0.453,
+        0.06,
+        0.39,
+        0.476,
+        0.361,
+        0.529,
+        0.438,
+        0.568,
+        1.0,
+        0.892,
+        0.801,
+        0.614,
+        0.81
+      ],
+      [
+        0.527,
+        0.301,
+        0.564,
+        0.513,
+        0.435,
+        0.816,
+        0.884,
+        0.752,
+        0.434,
+        0.346,
+        0.381,
+        -0.069,
+        0.419,
+        0.385,
+        -0.058,
+        0.639,
+        0.663,
+        0.55,
+        0.037,
+        0.38,
+        0.574,
+        0.368,
+        0.618,
+        0.543,
+        0.519,
+        0.892,
+        1.0,
+        0.855,
+        0.533,
+        0.687
+      ],
+      [
+        0.744,
+        0.295,
+        0.771,
+        0.722,
+        0.503,
+        0.816,
+        0.861,
+        0.91,
+        0.43,
+        0.175,
+        0.531,
+        -0.12,
+        0.555,
+        0.538,
+        -0.102,
+        0.483,
+        0.44,
+        0.602,
+        -0.03,
+        0.215,
+        0.787,
+        0.36,
+        0.816,
+        0.747,
+        0.548,
+        0.801,
+        0.855,
+        1.0,
+        0.503,
+        0.511
+      ],
+      [
+        0.164,
+        0.105,
+        0.189,
+        0.144,
+        0.394,
+        0.51,
+        0.409,
+        0.376,
+        0.7,
+        0.334,
+        0.095,
+        -0.128,
+        0.11,
+        0.074,
+        -0.107,
+        0.278,
+        0.198,
+        0.143,
+        0.389,
+        0.111,
+        0.244,
+        0.233,
+        0.269,
+        0.209,
+        0.494,
+        0.614,
+        0.533,
+        0.503,
+        1.0,
+        0.538
+      ],
+      [
+        0.007,
+        0.119,
+        0.051,
+        0.004,
+        0.499,
+        0.687,
+        0.515,
+        0.369,
+        0.438,
+        0.767,
+        0.05,
+        -0.046,
+        0.085,
+        0.018,
+        0.101,
+        0.591,
+        0.439,
+        0.311,
+        0.078,
+        0.591,
+        0.093,
+        0.219,
+        0.139,
+        0.08,
+        0.618,
+        0.81,
+        0.687,
+        0.511,
+        0.538,
+        1.0
+      ]
+    ],
+    "target_correlation": {
+      "mean radius": 0.73,
+      "mean texture": 0.4152,
+      "mean perimeter": 0.7426,
+      "mean area": 0.709,
+      "mean smoothness": 0.3586,
+      "mean compactness": 0.5965,
+      "mean concavity": 0.6964,
+      "mean concave points": 0.7766,
+      "mean symmetry": 0.3305,
+      "mean fractal dimension": -0.0128,
+      "radius error": 0.5671,
+      "texture error": -0.0083,
+      "perimeter error": 0.5561,
+      "area error": 0.5482,
+      "smoothness error": -0.067,
+      "compactness error": 0.293,
+      "concavity error": 0.2537,
+      "concave points error": 0.408,
+      "symmetry error": -0.0065,
+      "fractal dimension error": 0.078,
+      "worst radius": 0.7765,
+      "worst texture": 0.4569,
+      "worst perimeter": 0.7829,
+      "worst area": 0.7338,
+      "worst smoothness": 0.4215,
+      "worst compactness": 0.591,
+      "worst concavity": 0.6596,
+      "worst concave points": 0.7936,
+      "worst symmetry": 0.4163,
+      "worst fractal dimension": 0.3239
+    }
+  },
+  "models_compared": [
+    "Random Forest",
+    "Support Vector Machine",
+    "XGBoost"
+  ],
+  "cv_results": {
+    "Random Forest": {
+      "accuracy": {
+        "mean": 0.9648,
+        "std": 0.0146,
+        "fold_values": [
+          0.956,
+          0.989,
+          0.9451,
+          0.967,
+          0.967
+        ]
+      },
+      "precision": {
+        "mean": 0.9641,
+        "std": 0.0107,
+        "fold_values": [
+          0.9688,
+          0.9714,
+          0.9677,
+          0.9429,
+          0.9697
+        ]
+      },
+      "recall": {
+        "mean": 0.9412,
+        "std": 0.0416,
+        "fold_values": [
+          0.9118,
+          1.0,
+          0.8824,
+          0.9706,
+          0.9412
+        ]
+      },
+      "specificity": {
+        "mean": 0.9789,
+        "std": 0.007,
+        "fold_values": [
+          0.9825,
+          0.9825,
+          0.9825,
+          0.9649,
+          0.9825
+        ]
+      },
+      "f1": {
+        "mean": 0.9519,
+        "std": 0.0207,
+        "fold_values": [
+          0.9394,
+          0.9855,
+          0.9231,
+          0.9565,
+          0.9552
+        ]
+      },
+      "roc_auc": {
+        "mean": 0.9889,
+        "std": 0.0067,
+        "fold_values": [
+          0.9827,
+          1.0,
+          0.993,
+          0.9863,
+          0.9825
+        ]
+      },
+      "mcc": {
+        "mean": 0.9251,
+        "std": 0.0313,
+        "fold_values": [
+          0.906,
+          0.9769,
+          0.8828,
+          0.9302,
+          0.9294
+        ]
+      }
+    },
+    "Support Vector Machine": {
+      "accuracy": {
+        "mean": 0.9714,
+        "std": 0.0054,
+        "fold_values": [
+          0.967,
+          0.978,
+          0.967,
+          0.967,
+          0.978
+        ]
+      },
+      "precision": {
+        "mean": 0.9769,
+        "std": 0.021,
+        "fold_values": [
+          1.0,
+          0.9444,
+          0.9697,
+          1.0,
+          0.9706
+        ]
+      },
+      "recall": {
+        "mean": 0.9471,
+        "std": 0.0343,
+        "fold_values": [
+          0.9118,
+          1.0,
+          0.9412,
+          0.9118,
+          0.9706
+        ]
+      },
+      "specificity": {
+        "mean": 0.986,
+        "std": 0.0131,
+        "fold_values": [
+          1.0,
+          0.9649,
+          0.9825,
+          1.0,
+          0.9825
+        ]
+      },
+      "f1": {
+        "mean": 0.961,
+        "std": 0.0082,
+        "fold_values": [
+          0.9538,
+          0.9714,
+          0.9552,
+          0.9538,
+          0.9706
+        ]
+      },
+      "roc_auc": {
+        "mean": 0.9949,
+        "std": 0.005,
+        "fold_values": [
+          0.9974,
+          0.999,
+          0.9985,
+          0.9856,
+          0.9943
+        ]
+      },
+      "mcc": {
+        "mean": 0.9397,
+        "std": 0.0116,
+        "fold_values": [
+          0.9307,
+          0.9546,
+          0.9294,
+          0.9307,
+          0.953
+        ]
+      }
+    },
+    "XGBoost": {
+      "accuracy": {
+        "mean": 0.9714,
+        "std": 0.0112,
+        "fold_values": [
+          0.967,
+          0.978,
+          0.956,
+          0.967,
+          0.989
+        ]
+      },
+      "precision": {
+        "mean": 0.9764,
+        "std": 0.0216,
+        "fold_values": [
+          1.0,
+          0.9706,
+          0.9688,
+          0.9429,
+          1.0
+        ]
+      },
+      "recall": {
+        "mean": 0.9471,
+        "std": 0.0288,
+        "fold_values": [
+          0.9118,
+          0.9706,
+          0.9118,
+          0.9706,
+          0.9706
+        ]
+      },
+      "specificity": {
+        "mean": 0.986,
+        "std": 0.0131,
+        "fold_values": [
+          1.0,
+          0.9825,
+          0.9825,
+          0.9649,
+          1.0
+        ]
+      },
+      "f1": {
+        "mean": 0.9611,
+        "std": 0.0156,
+        "fold_values": [
+          0.9538,
+          0.9706,
+          0.9394,
+          0.9565,
+          0.9851
+        ]
+      },
+      "roc_auc": {
+        "mean": 0.9924,
+        "std": 0.0048,
+        "fold_values": [
+          0.9917,
+          0.999,
+          0.9938,
+          0.984,
+          0.9933
+        ]
+      },
+      "mcc": {
+        "mean": 0.9393,
+        "std": 0.0239,
+        "fold_values": [
+          0.9307,
+          0.953,
+          0.906,
+          0.9302,
+          0.9767
+        ]
+      }
+    }
+  },
+  "test_evaluations": {
+    "Random Forest": {
+      "metrics": {
+        "accuracy": 0.9737,
+        "precision": 1.0,
+        "recall": 0.9286,
+        "specificity": 1.0,
+        "f1": 0.963,
+        "roc_auc": 0.9929,
+        "mcc": 0.9442,
+        "tp": 39,
+        "fp": 0,
+        "tn": 72,
+        "fn": 3
+      },
+      "roc_curve": [
+        {
+          "fpr": 0.0,
+          "tpr": 0.0
+        },
+        {
+          "fpr": 0.0,
+          "tpr": 0.4286
+        },
+        {
+          "fpr": 0.0,
+          "tpr": 0.5238
+        },
+        {
+          "fpr": 0.0,
+          "tpr": 0.6429
+        },
+        {
+          "fpr": 0.0,
+          "tpr": 0.7143
+        },
+        {
+          "fpr": 0.0,
+          "tpr": 0.9286
+        },
+        {
+          "fpr": 0.0417,
+          "tpr": 0.9286
+        },
+        {
+          "fpr": 0.0417,
+          "tpr": 0.9524
+        },
+        {
+          "fpr": 0.0833,
+          "tpr": 0.9524
+        },
+        {
+          "fpr": 0.0833,
+          "tpr": 0.9762
+        },
+        {
+          "fpr": 0.0972,
+          "tpr": 0.9762
+        },
+        {
+          "fpr": 0.125,
+          "tpr": 0.9762
+        },
+        {
+          "fpr": 0.1528,
+          "tpr": 0.9762
+        },
+        {
+          "fpr": 0.1944,
+          "tpr": 1.0
+        },
+        {
+          "fpr": 0.2083,
+          "tpr": 1.0
+        },
+        {
+          "fpr": 0.2361,
+          "tpr": 1.0
+        },
+        {
+          "fpr": 0.2778,
+          "tpr": 1.0
+        },
+        {
+          "fpr": 0.3333,
+          "tpr": 1.0
+        },
+        {
+          "fpr": 0.375,
+          "tpr": 1.0
+        },
+        {
+          "fpr": 0.5278,
+          "tpr": 1.0
+        },
+        {
+          "fpr": 1.0,
+          "tpr": 1.0
+        }
+      ],
+      "pr_curve": [
+        {
+          "recall": 1.0,
+          "precision": 0.3684
+        },
+        {
+          "recall": 1.0,
+          "precision": 0.525
+        },
+        {
+          "recall": 1.0,
+          "precision": 0.6087
+        },
+        {
+          "recall": 1.0,
+          "precision": 0.6364
+        },
+        {
+          "recall": 1.0,
+          "precision": 0.6562
+        },
+        {
+          "recall": 1.0,
+          "precision": 0.6774
+        },
+        {
+          "recall": 1.0,
+          "precision": 0.6885
+        },
+        {
+          "recall": 1.0,
+          "precision": 0.7
+        },
+        {
+          "recall": 1.0,
+          "precision": 0.7119
+        },
+        {
+          "recall": 1.0,
+          "precision": 0.7368
+        },
+        {
+          "recall": 1.0,
+          "precision": 0.75
+        },
+        {
+          "recall": 0.9762,
+          "precision": 0.7885
+        },
+        {
+          "recall": 0.9762,
+          "precision": 0.8039
+        },
+        {
+          "recall": 0.9762,
+          "precision": 0.82
+        },
+        {
+          "recall": 0.9762,
+          "precision": 0.8542
+        },
+        {
+          "recall": 0.9762,
+          "precision": 0.8723
+        },
+        {
+          "recall": 0.9524,
+          "precision": 0.8696
+        },
+        {
+          "recall": 0.9524,
+          "precision": 0.8889
+        },
+        {
+          "recall": 0.9524,
+          "precision": 0.9091
+        },
+        {
+          "recall": 0.9524,
+          "precision": 0.9302
+        },
+        {
+          "recall": 0.9286,
+          "precision": 0.9286
+        },
+        {
+          "recall": 0.9286,
+          "precision": 0.9512
+        },
+        {
+          "recall": 0.9286,
+          "precision": 0.975
+        },
+        {
+          "recall": 0.9286,
+          "precision": 1.0
+        },
+        {
+          "recall": 0.9048,
+          "precision": 1.0
+        },
+        {
+          "recall": 0.881,
+          "precision": 1.0
+        },
+        {
+          "recall": 0.8571,
+          "precision": 1.0
+        },
+        {
+          "recall": 0.8333,
+          "precision": 1.0
+        },
+        {
+          "recall": 0.8095,
+          "precision": 1.0
+        },
+        {
+          "recall": 0.7857,
+          "precision": 1.0
+        },
+        {
+          "recall": 0.7619,
+          "precision": 1.0
+        },
+        {
+          "recall": 0.7381,
+          "precision": 1.0
+        },
+        {
+          "recall": 0.7143,
+          "precision": 1.0
+        },
+        {
+          "recall": 0.6429,
+          "precision": 1.0
+        },
+        {
+          "recall": 0.619,
+          "precision": 1.0
+        },
+        {
+          "recall": 0.5952,
+          "precision": 1.0
+        },
+        {
+          "recall": 0.5714,
+          "precision": 1.0
+        },
+        {
+          "recall": 0.5476,
+          "precision": 1.0
+        },
+        {
+          "recall": 0.5238,
+          "precision": 1.0
+        },
+        {
+          "recall": 0.4762,
+          "precision": 1.0
+        },
+        {
+          "recall": 0.4286,
+          "precision": 1.0
+        },
+        {
+          "recall": 0.0,
+          "precision": 1.0
+        }
+      ]
+    },
+    "Support Vector Machine": {
+      "metrics": {
+        "accuracy": 0.9737,
+        "precision": 1.0,
+        "recall": 0.9286,
+        "specificity": 1.0,
+        "f1": 0.963,
+        "roc_auc": 0.9947,
+        "mcc": 0.9442,
+        "tp": 39,
+        "fp": 0,
+        "tn": 72,
+        "fn": 3
+      },
+      "roc_curve": [
+        {
+          "fpr": 0.0,
+          "tpr": 0.0
+        },
+        {
+          "fpr": 0.0,
+          "tpr": 0.0238
+        },
+        {
+          "fpr": 0.0,
+          "tpr": 0.9286
+        },
+        {
+          "fpr": 0.0139,
+          "tpr": 0.9286
+        },
+        {
+          "fpr": 0.0139,
+          "tpr": 0.9524
+        },
+        {
+          "fpr": 0.0278,
+          "tpr": 0.9524
+        },
+        {
+          "fpr": 0.0278,
+          "tpr": 0.9762
+        },
+        {
+          "fpr": 0.1806,
+          "tpr": 0.9762
+        },
+        {
+          "fpr": 0.1806,
+          "tpr": 1.0
+        },
+        {
+          "fpr": 1.0,
+          "tpr": 1.0
+        }
+      ],
+      "pr_curve": [
+        {
+          "recall": 1.0,
+          "precision": 0.3684
+        },
+        {
+          "recall": 1.0,
+          "precision": 0.375
+        },
+        {
+          "recall": 1.0,
+          "precision": 0.3818
+        },
+        {
+          "recall": 1.0,
+          "precision": 0.3889
+        },
+        {
+          "recall": 1.0,
+          "precision": 0.3962
+        },
+        {
+          "recall": 1.0,
+          "precision": 0.4038
+        },
+        {
+          "recall": 1.0,
+          "precision": 0.4118
+        },
+        {
+          "recall": 1.0,
+          "precision": 0.42
+        },
+        {
+          "recall": 1.0,
+          "precision": 0.4286
+        },
+        {
+          "recall": 1.0,
+          "precision": 0.4375
+        },
+        {
+          "recall": 1.0,
+          "precision": 0.4468
+        },
+        {
+          "recall": 1.0,
+          "precision": 0.4565
+        },
+        {
+          "recall": 1.0,
+          "precision": 0.4667
+        },
+        {
+          "recall": 1.0,
+          "precision": 0.4773
+        },
+        {
+          "recall": 1.0,
+          "precision": 0.4884
+        },
+        {
+          "recall": 1.0,
+          "precision": 0.5
+        },
+        {
+          "recall": 1.0,
+          "precision": 0.5122
+        },
+        {
+          "recall": 1.0,
+          "precision": 0.525
+        },
+        {
+          "recall": 1.0,
+          "precision": 0.5385
+        },
+        {
+          "recall": 1.0,
+          "precision": 0.5526
+        },
+        {
+          "recall": 1.0,
+          "precision": 0.5676
+        },
+        {
+          "recall": 1.0,
+          "precision": 0.5833
+        },
+        {
+          "recall": 1.0,
+          "precision": 0.6
+        },
+        {
+          "recall": 1.0,
+          "precision": 0.6176
+        },
+        {
+          "recall": 1.0,
+          "precision": 0.6364
+        },
+        {
+          "recall": 1.0,
+          "precision": 0.6562
+        },
+        {
+          "recall": 1.0,
+          "precision": 0.6774
+        },
+        {
+          "recall": 1.0,
+          "precision": 0.7
+        },
+        {
+          "recall": 1.0,
+          "precision": 0.7241
+        },
+        {
+          "recall": 1.0,
+          "precision": 0.75
+        },
+        {
+          "recall": 0.9762,
+          "precision": 0.7593
+        },
+        {
+          "recall": 0.9762,
+          "precision": 0.7885
+        },
+        {
+          "recall": 0.9762,
+          "precision": 0.82
+        },
+        {
+          "recall": 0.9762,
+          "precision": 0.8542
+        },
+        {
+          "recall": 0.9762,
+          "precision": 0.8913
+        },
+        {
+          "recall": 0.9762,
+          "precision": 0.9318
+        },
+        {
+          "recall": 0.9524,
+          "precision": 0.9524
+        },
+        {
+          "recall": 0.9286,
+          "precision": 0.975
+        },
+        {
+          "recall": 0.9048,
+          "precision": 1.0
+        },
+        {
+          "recall": 0.8571,
+          "precision": 1.0
+        },
+        {
+          "recall": 0.8095,
+          "precision": 1.0
+        },
+        {
+          "recall": 0.7619,
+          "precision": 1.0
+        },
+        {
+          "recall": 0.7143,
+          "precision": 1.0
+        },
+        {
+          "recall": 0.6667,
+          "precision": 1.0
+        },
+        {
+          "recall": 0.619,
+          "precision": 1.0
+        },
+        {
+          "recall": 0.5714,
+          "precision": 1.0
+        },
+        {
+          "recall": 0.5238,
+          "precision": 1.0
+        },
+        {
+          "recall": 0.4762,
+          "precision": 1.0
+        },
+        {
+          "recall": 0.4286,
+          "precision": 1.0
+        },
+        {
+          "recall": 0.381,
+          "precision": 1.0
+        },
+        {
+          "recall": 0.3333,
+          "precision": 1.0
+        },
+        {
+          "recall": 0.2857,
+          "precision": 1.0
+        },
+        {
+          "recall": 0.2381,
+          "precision": 1.0
+        },
+        {
+          "recall": 0.1905,
+          "precision": 1.0
+        },
+        {
+          "recall": 0.1429,
+          "precision": 1.0
+        },
+        {
+          "recall": 0.0952,
+          "precision": 1.0
+        },
+        {
+          "recall": 0.0476,
+          "precision": 1.0
+        },
+        {
+          "recall": 0.0,
+          "precision": 1.0
+        }
+      ]
+    },
+    "XGBoost": {
+      "metrics": {
+        "accuracy": 0.9649,
+        "precision": 1.0,
+        "recall": 0.9048,
+        "specificity": 1.0,
+        "f1": 0.95,
+        "roc_auc": 0.9904,
+        "mcc": 0.9258,
+        "tp": 38,
+        "fp": 0,
+        "tn": 72,
+        "fn": 4
+      },
+      "roc_curve": [
+        {
+          "fpr": 0.0,
+          "tpr": 0.0
+        },
+        {
+          "fpr": 0.0,
+          "tpr": 0.0238
+        },
+        {
+          "fpr": 0.0,
+          "tpr": 0.9524
+        },
+        {
+          "fpr": 0.0139,
+          "tpr": 0.9524
+        },
+        {
+          "fpr": 0.0139,
+          "tpr": 0.9762
+        },
+        {
+          "fpr": 0.3889,
+          "tpr": 0.9762
+        },
+        {
+          "fpr": 0.3889,
+          "tpr": 1.0
+        },
+        {
+          "fpr": 0.6806,
+          "tpr": 1.0
+        },
+        {
+          "fpr": 0.7083,
+          "tpr": 1.0
+        },
+        {
+          "fpr": 1.0,
+          "tpr": 1.0
+        }
+      ],
+      "pr_curve": [
+        {
+          "recall": 1.0,
+          "precision": 0.3684
+        },
+        {
+          "recall": 1.0,
+          "precision": 0.375
+        },
+        {
+          "recall": 1.0,
+          "precision": 0.3818
+        },
+        {
+          "recall": 1.0,
+          "precision": 0.3889
+        },
+        {
+          "recall": 1.0,
+          "precision": 0.3962
+        },
+        {
+          "recall": 1.0,
+          "precision": 0.4038
+        },
+        {
+          "recall": 1.0,
+          "precision": 0.4118
+        },
+        {
+          "recall": 1.0,
+          "precision": 0.42
+        },
+        {
+          "recall": 1.0,
+          "precision": 0.4286
+        },
+        {
+          "recall": 1.0,
+          "precision": 0.4375
+        },
+        {
+          "recall": 1.0,
+          "precision": 0.4468
+        },
+        {
+          "recall": 1.0,
+          "precision": 0.4615
+        },
+        {
+          "recall": 1.0,
+          "precision": 0.4719
+        },
+        {
+          "recall": 1.0,
+          "precision": 0.4828
+        },
+        {
+          "recall": 1.0,
+          "precision": 0.4941
+        },
+        {
+          "recall": 1.0,
+          "precision": 0.506
+        },
+        {
+          "recall": 1.0,
+          "precision": 0.5185
+        },
+        {
+          "recall": 1.0,
+          "precision": 0.5316
+        },
+        {
+          "recall": 1.0,
+          "precision": 0.5455
+        },
+        {
+          "recall": 1.0,
+          "precision": 0.56
+        },
+        {
+          "recall": 1.0,
+          "precision": 0.5753
+        },
+        {
+          "recall": 1.0,
+          "precision": 0.5915
+        },
+        {
+          "recall": 0.9762,
+          "precision": 0.5942
+        },
+        {
+          "recall": 0.9762,
+          "precision": 0.6119
+        },
+        {
+          "recall": 0.9762,
+          "precision": 0.6308
+        },
+        {
+          "recall": 0.9762,
+          "precision": 0.6508
+        },
+        {
+          "recall": 0.9762,
+          "precision": 0.6721
+        },
+        {
+          "recall": 0.9762,
+          "precision": 0.6949
+        },
+        {
+          "recall": 0.9762,
+          "precision": 0.7193
+        },
+        {
+          "recall": 0.9762,
+          "precision": 0.7455
+        },
+        {
+          "recall": 0.9762,
+          "precision": 0.7736
+        },
+        {
+          "recall": 0.9762,
+          "precision": 0.8039
+        },
+        {
+          "recall": 0.9762,
+          "precision": 0.8367
+        },
+        {
+          "recall": 0.9762,
+          "precision": 0.8723
+        },
+        {
+          "recall": 0.9762,
+          "precision": 0.9111
+        },
+        {
+          "recall": 0.9762,
+          "precision": 0.9535
+        },
+        {
+          "recall": 0.9524,
+          "precision": 0.9756
+        },
+        {
+          "recall": 0.9286,
+          "precision": 1.0
+        },
+        {
+          "recall": 0.881,
+          "precision": 1.0
+        },
+        {
+          "recall": 0.8333,
+          "precision": 1.0
+        },
+        {
+          "recall": 0.7857,
+          "precision": 1.0
+        },
+        {
+          "recall": 0.7381,
+          "precision": 1.0
+        },
+        {
+          "recall": 0.6905,
+          "precision": 1.0
+        },
+        {
+          "recall": 0.6429,
+          "precision": 1.0
+        },
+        {
+          "recall": 0.5952,
+          "precision": 1.0
+        },
+        {
+          "recall": 0.5476,
+          "precision": 1.0
+        },
+        {
+          "recall": 0.5,
+          "precision": 1.0
+        },
+        {
+          "recall": 0.4524,
+          "precision": 1.0
+        },
+        {
+          "recall": 0.4048,
+          "precision": 1.0
+        },
+        {
+          "recall": 0.3571,
+          "precision": 1.0
+        },
+        {
+          "recall": 0.3095,
+          "precision": 1.0
+        },
+        {
+          "recall": 0.2619,
+          "precision": 1.0
+        },
+        {
+          "recall": 0.2143,
+          "precision": 1.0
+        },
+        {
+          "recall": 0.1667,
+          "precision": 1.0
+        },
+        {
+          "recall": 0.119,
+          "precision": 1.0
+        },
+        {
+          "recall": 0.0714,
+          "precision": 1.0
+        },
+        {
+          "recall": 0.0238,
+          "precision": 1.0
+        }
+      ]
+    }
+  },
+  "model_rankings": [
+    {
+      "rank": 1,
+      "model_name": "Support Vector Machine",
+      "cv_roc_auc_mean": 0.9949,
+      "cv_roc_auc_std": 0.005,
+      "cv_f1_mean": 0.961,
+      "cv_accuracy_mean": 0.9714,
+      "test_roc_auc": 0.9947,
+      "test_f1": 0.963,
+      "test_accuracy": 0.9737,
+      "is_winner": true
+    },
+    {
+      "rank": 2,
+      "model_name": "XGBoost",
+      "cv_roc_auc_mean": 0.9924,
+      "cv_roc_auc_std": 0.0048,
+      "cv_f1_mean": 0.9611,
+      "cv_accuracy_mean": 0.9714,
+      "test_roc_auc": 0.9904,
+      "test_f1": 0.95,
+      "test_accuracy": 0.9649,
+      "is_winner": false
+    },
+    {
+      "rank": 3,
+      "model_name": "Random Forest",
+      "cv_roc_auc_mean": 0.9889,
+      "cv_roc_auc_std": 0.0067,
+      "cv_f1_mean": 0.9519,
+      "cv_accuracy_mean": 0.9648,
+      "test_roc_auc": 0.9929,
+      "test_f1": 0.963,
+      "test_accuracy": 0.9737,
+      "is_winner": false
+    }
+  ],
+  "winning_model": "Support Vector Machine",
+  "bootstrap_ci": {
+    "accuracy": {
+      "point_estimate": 0.9737,
+      "mean": 0.9741,
+      "std_error": 0.0148,
+      "ci_lower": 0.9386,
+      "ci_upper": 1.0
+    },
+    "precision": {
+      "point_estimate": 1.0,
+      "mean": 1.0,
+      "std_error": 0.0,
+      "ci_lower": 1.0,
+      "ci_upper": 1.0
+    },
+    "recall": {
+      "point_estimate": 0.9286,
+      "mean": 0.9297,
+      "std_error": 0.0403,
+      "ci_lower": 0.8333,
+      "ci_upper": 1.0
+    },
+    "specificity": {
+      "point_estimate": 1.0,
+      "mean": 1.0,
+      "std_error": 0.0,
+      "ci_lower": 1.0,
+      "ci_upper": 1.0
+    },
+    "f1": {
+      "point_estimate": 0.963,
+      "mean": 0.9631,
+      "std_error": 0.0219,
+      "ci_lower": 0.9091,
+      "ci_upper": 1.0
+    },
+    "roc_auc": {
+      "point_estimate": 0.9947,
+      "mean": 0.9948,
+      "std_error": 0.0047,
+      "ci_lower": 0.9831,
+      "ci_upper": 1.0
+    },
+    "mcc": {
+      "point_estimate": 0.9442,
+      "mean": 0.9452,
+      "std_error": 0.0311,
+      "ci_lower": 0.8715,
+      "ci_upper": 1.0
+    }
+  },
+  "tuning": {
+    "winning_model": "Support Vector Machine",
+    "original_parameters": {
+      "C": 1.0,
+      "gamma": "scale",
+      "kernel": "rbf"
+    },
+    "search_space": {
+      "svm__C": [
+        0.1,
+        1.0,
+        5.0,
+        10.0,
+        50.0
+      ],
+      "svm__gamma": [
+        "scale",
+        "auto",
+        0.01,
+        0.005,
+        0.001
+      ],
+      "svm__kernel": [
+        "rbf"
+      ]
+    },
+    "best_parameters": {
+      "svm__C": 5.0,
+      "svm__gamma": 0.01,
+      "svm__kernel": "rbf"
+    },
+    "best_cv_roc_auc": 0.9957,
+    "baseline_test_metrics": {
+      "accuracy": 0.9737,
+      "precision": 1.0,
+      "recall": 0.9286,
+      "specificity": 1.0,
+      "f1": 0.963,
+      "roc_auc": 0.9947,
+      "mcc": 0.9442,
+      "tp": 39,
+      "fp": 0,
+      "tn": 72,
+      "fn": 3
+    },
+    "tuned_test_metrics": {
+      "accuracy": 0.9825,
+      "precision": 1.0,
+      "recall": 0.9524,
+      "specificity": 1.0,
+      "f1": 0.9756,
+      "roc_auc": 0.9974,
+      "mcc": 0.9626,
+      "tp": 40,
+      "fp": 0,
+      "tn": 72,
+      "fn": 2
+    },
+    "paired_differences": {
+      "accuracy": {
+        "baseline": 0.9737,
+        "tuned": 0.9825,
+        "abs_difference": 0.0088,
+        "rel_pct_change": 0.9,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0263,
+        "p_value_empirical": 0.3687,
+        "statistically_significant": false
+      },
+      "precision": {
+        "baseline": 1.0,
+        "tuned": 1.0,
+        "abs_difference": 0.0,
+        "rel_pct_change": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "p_value_empirical": 1.0,
+        "statistically_significant": false
+      },
+      "recall": {
+        "baseline": 0.9286,
+        "tuned": 0.9524,
+        "abs_difference": 0.0238,
+        "rel_pct_change": 2.56,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0714,
+        "p_value_empirical": 0.3687,
+        "statistically_significant": false
+      },
+      "specificity": {
+        "baseline": 1.0,
+        "tuned": 1.0,
+        "abs_difference": 0.0,
+        "rel_pct_change": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "p_value_empirical": 1.0,
+        "statistically_significant": false
+      },
+      "f1": {
+        "baseline": 0.963,
+        "tuned": 0.9756,
+        "abs_difference": 0.0126,
+        "rel_pct_change": 1.31,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0399,
+        "p_value_empirical": 0.3687,
+        "statistically_significant": false
+      },
+      "roc_auc": {
+        "baseline": 0.9947,
+        "tuned": 0.9974,
+        "abs_difference": 0.0026,
+        "rel_pct_change": 0.27,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0089,
+        "p_value_empirical": 0.12,
+        "statistically_significant": false
+      },
+      "mcc": {
+        "baseline": 0.9442,
+        "tuned": 0.9626,
+        "abs_difference": 0.0185,
+        "rel_pct_change": 1.96,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0554,
+        "p_value_empirical": 0.3687,
+        "statistically_significant": false
+      }
+    },
+    "tuning_summary_narrative": "Tuned Support Vector Machine using 5-fold Stratified GridSearchCV across 25 parameter candidates. Achieved best CV ROC-AUC of 0.9957. Held-out test ROC-AUC reached 0.9974 (baseline: 0.9947). Paired bootstrap analysis across 3,000 resamples provides rigorous confidence bounds on observed metric differences."
+  },
+  "shap": {
+    "model_name": "Support Vector Machine",
+    "explainer_type": "KernelExplainer",
+    "top_features": [
+      {
+        "rank": 1,
+        "feature_index": 21,
+        "feature_name": "worst texture",
+        "category": "Extreme / Worst",
+        "mean_abs_shap": 0.055,
+        "direction": "positive",
+        "correlation_with_malignancy": 0.4569,
+        "clinical_significance": "Most heterogeneous texture region. Reflects coarse chromatin clump distribution."
+      },
+      {
+        "rank": 2,
+        "feature_index": 7,
+        "feature_name": "mean concave points",
+        "category": "Mean",
+        "mean_abs_shap": 0.0381,
+        "direction": "positive",
+        "correlation_with_malignancy": 0.7766,
+        "clinical_significance": "Number of concave contour points. Strong indicator of invasive margin irregularity."
+      },
+      {
+        "rank": 3,
+        "feature_index": 20,
+        "feature_name": "worst radius",
+        "category": "Extreme / Worst",
+        "mean_abs_shap": 0.0357,
+        "direction": "positive",
+        "correlation_with_malignancy": 0.7765,
+        "clinical_significance": "Largest nuclear radius observed across fine needle aspirate (FNA). Catches extreme atypical cells."
+      },
+      {
+        "rank": 4,
+        "feature_index": 6,
+        "feature_name": "mean concavity",
+        "category": "Mean",
+        "mean_abs_shap": 0.0319,
+        "direction": "positive",
+        "correlation_with_malignancy": 0.6964,
+        "clinical_significance": "Severity of concave portions of the contour. Nuclear membrane indentations are hallmarks of malignancy."
+      },
+      {
+        "rank": 5,
+        "feature_index": 22,
+        "feature_name": "worst perimeter",
+        "category": "Extreme / Worst",
+        "mean_abs_shap": 0.031,
+        "direction": "positive",
+        "correlation_with_malignancy": 0.7829,
+        "clinical_significance": "Largest perimeter observed. Highlights the most dysplastic cell in the sample."
+      },
+      {
+        "rank": 6,
+        "feature_index": 23,
+        "feature_name": "worst area",
+        "category": "Extreme / Worst",
+        "mean_abs_shap": 0.0305,
+        "direction": "positive",
+        "correlation_with_malignancy": 0.7338,
+        "clinical_significance": "Largest nuclear area observed. Strongest single morphological marker of severe dysplasia."
+      },
+      {
+        "rank": 7,
+        "feature_index": 26,
+        "feature_name": "worst concavity",
+        "category": "Extreme / Worst",
+        "mean_abs_shap": 0.0257,
+        "direction": "positive",
+        "correlation_with_malignancy": 0.6596,
+        "clinical_significance": "Deepest concave membrane depressions. Indicates profound nuclear clefting."
+      },
+      {
+        "rank": 8,
+        "feature_index": 27,
+        "feature_name": "worst concave points",
+        "category": "Extreme / Worst",
+        "mean_abs_shap": 0.0246,
+        "direction": "positive",
+        "correlation_with_malignancy": 0.7936,
+        "clinical_significance": "Maximum number of membrane cleft indentations. High clinical sensitivity for carcinoma."
+      },
+      {
+        "rank": 9,
+        "feature_index": 28,
+        "feature_name": "worst symmetry",
+        "category": "Extreme / Worst",
+        "mean_abs_shap": 0.0242,
+        "direction": "positive",
+        "correlation_with_malignancy": 0.4163,
+        "clinical_significance": "Morphological characteristic 'worst symmetry' quantified from FNA biopsy digital images."
+      },
+      {
+        "rank": 10,
+        "feature_index": 1,
+        "feature_name": "mean texture",
+        "category": "Mean",
+        "mean_abs_shap": 0.0232,
+        "direction": "positive",
+        "correlation_with_malignancy": 0.4152,
+        "clinical_significance": "Standard deviation of gray-scale values. High variation reflects chromatin texture heterogeneity."
+      }
+    ],
+    "all_feature_importance": [
+      {
+        "feature": "worst texture",
+        "mean_abs_shap": 0.055,
+        "rank": 1
+      },
+      {
+        "feature": "mean concave points",
+        "mean_abs_shap": 0.0381,
+        "rank": 2
+      },
+      {
+        "feature": "worst radius",
+        "mean_abs_shap": 0.0357,
+        "rank": 3
+      },
+      {
+        "feature": "mean concavity",
+        "mean_abs_shap": 0.0319,
+        "rank": 4
+      },
+      {
+        "feature": "worst perimeter",
+        "mean_abs_shap": 0.031,
+        "rank": 5
+      },
+      {
+        "feature": "worst area",
+        "mean_abs_shap": 0.0305,
+        "rank": 6
+      },
+      {
+        "feature": "worst concavity",
+        "mean_abs_shap": 0.0257,
+        "rank": 7
+      },
+      {
+        "feature": "worst concave points",
+        "mean_abs_shap": 0.0246,
+        "rank": 8
+      },
+      {
+        "feature": "worst symmetry",
+        "mean_abs_shap": 0.0242,
+        "rank": 9
+      },
+      {
+        "feature": "mean texture",
+        "mean_abs_shap": 0.0232,
+        "rank": 10
+      },
+      {
+        "feature": "worst smoothness",
+        "mean_abs_shap": 0.0204,
+        "rank": 11
+      },
+      {
+        "feature": "radius error",
+        "mean_abs_shap": 0.0203,
+        "rank": 12
+      },
+      {
+        "feature": "mean radius",
+        "mean_abs_shap": 0.0145,
+        "rank": 13
+      },
+      {
+        "feature": "perimeter error",
+        "mean_abs_shap": 0.0138,
+        "rank": 14
+      },
+      {
+        "feature": "mean area",
+        "mean_abs_shap": 0.0132,
+        "rank": 15
+      },
+      {
+        "feature": "mean perimeter",
+        "mean_abs_shap": 0.0101,
+        "rank": 16
+      },
+      {
+        "feature": "area error",
+        "mean_abs_shap": 0.0065,
+        "rank": 17
+      },
+      {
+        "feature": "worst fractal dimension",
+        "mean_abs_shap": 0.0036,
+        "rank": 18
+      },
+      {
+        "feature": "texture error",
+        "mean_abs_shap": 0.0031,
+        "rank": 19
+      },
+      {
+        "feature": "mean fractal dimension",
+        "mean_abs_shap": 0.003,
+        "rank": 20
+      },
+      {
+        "feature": "compactness error",
+        "mean_abs_shap": 0.0019,
+        "rank": 21
+      },
+      {
+        "feature": "fractal dimension error",
+        "mean_abs_shap": 0.0014,
+        "rank": 22
+      },
+      {
+        "feature": "mean compactness",
+        "mean_abs_shap": 0.0001,
+        "rank": 23
+      },
+      {
+        "feature": "concave points error",
+        "mean_abs_shap": 0.0,
+        "rank": 24
+      },
+      {
+        "feature": "symmetry error",
+        "mean_abs_shap": 0.0,
+        "rank": 25
+      },
+      {
+        "feature": "worst compactness",
+        "mean_abs_shap": 0.0,
+        "rank": 26
+      },
+      {
+        "feature": "concavity error",
+        "mean_abs_shap": 0.0,
+        "rank": 27
+      },
+      {
+        "feature": "smoothness error",
+        "mean_abs_shap": 0.0,
+        "rank": 28
+      },
+      {
+        "feature": "mean symmetry",
+        "mean_abs_shap": 0.0,
+        "rank": 29
+      },
+      {
+        "feature": "mean smoothness",
+        "mean_abs_shap": 0.0,
+        "rank": 30
+      }
+    ],
+    "local_explanations": [
+      {
+        "title": "Definitive Malignant Case",
+        "sample_index": 12,
+        "ground_truth": "Malignant",
+        "predicted_class": "Malignant",
+        "malignant_probability": 1.0,
+        "top_contributions": [
+          {
+            "feature": "worst texture",
+            "value": 35.9,
+            "shap_value": 0.0932,
+            "impact": "pushes towards Malignant"
+          },
+          {
+            "feature": "worst radius",
+            "value": 23.72,
+            "shap_value": 0.0831,
+            "impact": "pushes towards Malignant"
+          },
+          {
+            "feature": "worst smoothness",
+            "value": 0.1782,
+            "shap_value": 0.0738,
+            "impact": "pushes towards Malignant"
+          },
+          {
+            "feature": "worst area",
+            "value": 1724.0,
+            "shap_value": 0.0657,
+            "impact": "pushes towards Malignant"
+          },
+          {
+            "feature": "worst perimeter",
+            "value": 159.8,
+            "shap_value": 0.0606,
+            "impact": "pushes towards Malignant"
+          },
+          {
+            "feature": "mean concave points",
+            "value": 0.0966,
+            "shap_value": 0.0598,
+            "impact": "pushes towards Malignant"
+          },
+          {
+            "feature": "mean texture",
+            "value": 26.6,
+            "shap_value": 0.0598,
+            "impact": "pushes towards Malignant"
+          },
+          {
+            "feature": "mean concavity",
+            "value": 0.1921,
+            "shap_value": 0.0532,
+            "impact": "pushes towards Malignant"
+          }
+        ]
+      },
+      {
+        "title": "Definitive Benign Case",
+        "sample_index": 63,
+        "ground_truth": "Benign",
+        "predicted_class": "Benign",
+        "malignant_probability": 0.0,
+        "top_contributions": [
+          {
+            "feature": "worst texture",
+            "value": 14.82,
+            "shap_value": -0.08,
+            "impact": "pushes towards Benign"
+          },
+          {
+            "feature": "mean texture",
+            "value": 12.35,
+            "shap_value": -0.0506,
+            "impact": "pushes towards Benign"
+          },
+          {
+            "feature": "worst perimeter",
+            "value": 72.42,
+            "shap_value": -0.0335,
+            "impact": "pushes towards Benign"
+          },
+          {
+            "feature": "worst radius",
+            "value": 11.37,
+            "shap_value": -0.032,
+            "impact": "pushes towards Benign"
+          },
+          {
+            "feature": "mean concavity",
+            "value": 0.0124,
+            "shap_value": -0.0296,
+            "impact": "pushes towards Benign"
+          },
+          {
+            "feature": "mean concave points",
+            "value": 0.0137,
+            "shap_value": -0.028,
+            "impact": "pushes towards Benign"
+          },
+          {
+            "feature": "radius error",
+            "value": 0.1753,
+            "shap_value": -0.0265,
+            "impact": "pushes towards Benign"
+          },
+          {
+            "feature": "worst area",
+            "value": 392.2,
+            "shap_value": -0.0261,
+            "impact": "pushes towards Benign"
+          }
+        ]
+      },
+      {
+        "title": "Borderline Diagnostic Case",
+        "sample_index": 3,
+        "ground_truth": "Malignant",
+        "predicted_class": "Benign",
+        "malignant_probability": 0.5,
+        "top_contributions": [
+          {
+            "feature": "worst texture",
+            "value": 30.86,
+            "shap_value": 0.0695,
+            "impact": "pushes towards Malignant"
+          },
+          {
+            "feature": "texture error",
+            "value": 1.851,
+            "shap_value": -0.0515,
+            "impact": "pushes towards Benign"
+          },
+          {
+            "feature": "worst smoothness",
+            "value": 0.1431,
+            "shap_value": 0.0311,
+            "impact": "pushes towards Malignant"
+          },
+          {
+            "feature": "worst concave points",
+            "value": 0.1565,
+            "shap_value": 0.0299,
+            "impact": "pushes towards Malignant"
+          },
+          {
+            "feature": "mean concave points",
+            "value": 0.0584,
+            "shap_value": 0.0253,
+            "impact": "pushes towards Malignant"
+          },
+          {
+            "feature": "worst concavity",
+            "value": 0.3194,
+            "shap_value": 0.0146,
+            "impact": "pushes towards Malignant"
+          },
+          {
+            "feature": "mean concavity",
+            "value": 0.0939,
+            "shap_value": 0.0098,
+            "impact": "pushes towards Malignant"
+          },
+          {
+            "feature": "worst fractal dimension",
+            "value": 0.0935,
+            "shap_value": 0.0091,
+            "impact": "pushes towards Malignant"
+          }
+        ]
+      }
+    ],
+    "disclaimer": "SHAP quantifies feature attributions within the trained mathematical estimator and does not prove biological causality."
+  }
+}

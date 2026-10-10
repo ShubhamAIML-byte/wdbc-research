@@ -1,0 +1,432 @@
+{
+  "model_name": "Support Vector Machine",
+  "explainer_type": "KernelExplainer",
+  "top_features": [
+    {
+      "rank": 1,
+      "feature_index": 21,
+      "feature_name": "worst texture",
+      "category": "Extreme / Worst",
+      "mean_abs_shap": 0.055,
+      "direction": "positive",
+      "correlation_with_malignancy": 0.4569,
+      "clinical_significance": "Most heterogeneous texture region. Reflects coarse chromatin clump distribution."
+    },
+    {
+      "rank": 2,
+      "feature_index": 7,
+      "feature_name": "mean concave points",
+      "category": "Mean",
+      "mean_abs_shap": 0.0381,
+      "direction": "positive",
+      "correlation_with_malignancy": 0.7766,
+      "clinical_significance": "Number of concave contour points. Strong indicator of invasive margin irregularity."
+    },
+    {
+      "rank": 3,
+      "feature_index": 20,
+      "feature_name": "worst radius",
+      "category": "Extreme / Worst",
+      "mean_abs_shap": 0.0357,
+      "direction": "positive",
+      "correlation_with_malignancy": 0.7765,
+      "clinical_significance": "Largest nuclear radius observed across fine needle aspirate (FNA). Catches extreme atypical cells."
+    },
+    {
+      "rank": 4,
+      "feature_index": 6,
+      "feature_name": "mean concavity",
+      "category": "Mean",
+      "mean_abs_shap": 0.0319,
+      "direction": "positive",
+      "correlation_with_malignancy": 0.6964,
+      "clinical_significance": "Severity of concave portions of the contour. Nuclear membrane indentations are hallmarks of malignancy."
+    },
+    {
+      "rank": 5,
+      "feature_index": 22,
+      "feature_name": "worst perimeter",
+      "category": "Extreme / Worst",
+      "mean_abs_shap": 0.031,
+      "direction": "positive",
+      "correlation_with_malignancy": 0.7829,
+      "clinical_significance": "Largest perimeter observed. Highlights the most dysplastic cell in the sample."
+    },
+    {
+      "rank": 6,
+      "feature_index": 23,
+      "feature_name": "worst area",
+      "category": "Extreme / Worst",
+      "mean_abs_shap": 0.0305,
+      "direction": "positive",
+      "correlation_with_malignancy": 0.7338,
+      "clinical_significance": "Largest nuclear area observed. Strongest single morphological marker of severe dysplasia."
+    },
+    {
+      "rank": 7,
+      "feature_index": 26,
+      "feature_name": "worst concavity",
+      "category": "Extreme / Worst",
+      "mean_abs_shap": 0.0257,
+      "direction": "positive",
+      "correlation_with_malignancy": 0.6596,
+      "clinical_significance": "Deepest concave membrane depressions. Indicates profound nuclear clefting."
+    },
+    {
+      "rank": 8,
+      "feature_index": 27,
+      "feature_name": "worst concave points",
+      "category": "Extreme / Worst",
+      "mean_abs_shap": 0.0246,
+      "direction": "positive",
+      "correlation_with_malignancy": 0.7936,
+      "clinical_significance": "Maximum number of membrane cleft indentations. High clinical sensitivity for carcinoma."
+    },
+    {
+      "rank": 9,
+      "feature_index": 28,
+      "feature_name": "worst symmetry",
+      "category": "Extreme / Worst",
+      "mean_abs_shap": 0.0242,
+      "direction": "positive",
+      "correlation_with_malignancy": 0.4163,
+      "clinical_significance": "Morphological characteristic 'worst symmetry' quantified from FNA biopsy digital images."
+    },
+    {
+      "rank": 10,
+      "feature_index": 1,
+      "feature_name": "mean texture",
+      "category": "Mean",
+      "mean_abs_shap": 0.0232,
+      "direction": "positive",
+      "correlation_with_malignancy": 0.4152,
+      "clinical_significance": "Standard deviation of gray-scale values. High variation reflects chromatin texture heterogeneity."
+    }
+  ],
+  "all_feature_importance": [
+    {
+      "feature": "worst texture",
+      "mean_abs_shap": 0.055,
+      "rank": 1
+    },
+    {
+      "feature": "mean concave points",
+      "mean_abs_shap": 0.0381,
+      "rank": 2
+    },
+    {
+      "feature": "worst radius",
+      "mean_abs_shap": 0.0357,
+      "rank": 3
+    },
+    {
+      "feature": "mean concavity",
+      "mean_abs_shap": 0.0319,
+      "rank": 4
+    },
+    {
+      "feature": "worst perimeter",
+      "mean_abs_shap": 0.031,
+      "rank": 5
+    },
+    {
+      "feature": "worst area",
+      "mean_abs_shap": 0.0305,
+      "rank": 6
+    },
+    {
+      "feature": "worst concavity",
+      "mean_abs_shap": 0.0257,
+      "rank": 7
+    },
+    {
+      "feature": "worst concave points",
+      "mean_abs_shap": 0.0246,
+      "rank": 8
+    },
+    {
+      "feature": "worst symmetry",
+      "mean_abs_shap": 0.0242,
+      "rank": 9
+    },
+    {
+      "feature": "mean texture",
+      "mean_abs_shap": 0.0232,
+      "rank": 10
+    },
+    {
+      "feature": "worst smoothness",
+      "mean_abs_shap": 0.0204,
+      "rank": 11
+    },
+    {
+      "feature": "radius error",
+      "mean_abs_shap": 0.0203,
+      "rank": 12
+    },
+    {
+      "feature": "mean radius",
+      "mean_abs_shap": 0.0145,
+      "rank": 13
+    },
+    {
+      "feature": "perimeter error",
+      "mean_abs_shap": 0.0138,
+      "rank": 14
+    },
+    {
+      "feature": "mean area",
+      "mean_abs_shap": 0.0132,
+      "rank": 15
+    },
+    {
+      "feature": "mean perimeter",
+      "mean_abs_shap": 0.0101,
+      "rank": 16
+    },
+    {
+      "feature": "area error",
+      "mean_abs_shap": 0.0065,
+      "rank": 17
+    },
+    {
+      "feature": "worst fractal dimension",
+      "mean_abs_shap": 0.0036,
+      "rank": 18
+    },
+    {
+      "feature": "texture error",
+      "mean_abs_shap": 0.0031,
+      "rank": 19
+    },
+    {
+      "feature": "mean fractal dimension",
+      "mean_abs_shap": 0.003,
+      "rank": 20
+    },
+    {
+      "feature": "compactness error",
+      "mean_abs_shap": 0.0019,
+      "rank": 21
+    },
+    {
+      "feature": "fractal dimension error",
+      "mean_abs_shap": 0.0014,
+      "rank": 22
+    },
+    {
+      "feature": "mean compactness",
+      "mean_abs_shap": 0.0001,
+      "rank": 23
+    },
+    {
+      "feature": "concave points error",
+      "mean_abs_shap": 0.0,
+      "rank": 24
+    },
+    {
+      "feature": "symmetry error",
+      "mean_abs_shap": 0.0,
+      "rank": 25
+    },
+    {
+      "feature": "worst compactness",
+      "mean_abs_shap": 0.0,
+      "rank": 26
+    },
+    {
+      "feature": "concavity error",
+      "mean_abs_shap": 0.0,
+      "rank": 27
+    },
+    {
+      "feature": "smoothness error",
+      "mean_abs_shap": 0.0,
+      "rank": 28
+    },
+    {
+      "feature": "mean symmetry",
+      "mean_abs_shap": 0.0,
+      "rank": 29
+    },
+    {
+      "feature": "mean smoothness",
+      "mean_abs_shap": 0.0,
+      "rank": 30
+    }
+  ],
+  "local_explanations": [
+    {
+      "title": "Definitive Malignant Case",
+      "sample_index": 12,
+      "ground_truth": "Malignant",
+      "predicted_class": "Malignant",
+      "malignant_probability": 1.0,
+      "top_contributions": [
+        {
+          "feature": "worst texture",
+          "value": 35.9,
+          "shap_value": 0.0932,
+          "impact": "pushes towards Malignant"
+        },
+        {
+          "feature": "worst radius",
+          "value": 23.72,
+          "shap_value": 0.0831,
+          "impact": "pushes towards Malignant"
+        },
+        {
+          "feature": "worst smoothness",
+          "value": 0.1782,
+          "shap_value": 0.0738,
+          "impact": "pushes towards Malignant"
+        },
+        {
+          "feature": "worst area",
+          "value": 1724.0,
+          "shap_value": 0.0657,
+          "impact": "pushes towards Malignant"
+        },
+        {
+          "feature": "worst perimeter",
+          "value": 159.8,
+          "shap_value": 0.0606,
+          "impact": "pushes towards Malignant"
+        },
+        {
+          "feature": "mean concave points",
+          "value": 0.0966,
+          "shap_value": 0.0598,
+          "impact": "pushes towards Malignant"
+        },
+        {
+          "feature": "mean texture",
+          "value": 26.6,
+          "shap_value": 0.0598,
+          "impact": "pushes towards Malignant"
+        },
+        {
+          "feature": "mean concavity",
+          "value": 0.1921,
+          "shap_value": 0.0532,
+          "impact": "pushes towards Malignant"
+        }
+      ]
+    },
+    {
+      "title": "Definitive Benign Case",
+      "sample_index": 63,
+      "ground_truth": "Benign",
+      "predicted_class": "Benign",
+      "malignant_probability": 0.0,
+      "top_contributions": [
+        {
+          "feature": "worst texture",
+          "value": 14.82,
+          "shap_value": -0.08,
+          "impact": "pushes towards Benign"
+        },
+        {
+          "feature": "mean texture",
+          "value": 12.35,
+          "shap_value": -0.0506,
+          "impact": "pushes towards Benign"
+        },
+        {
+          "feature": "worst perimeter",
+          "value": 72.42,
+          "shap_value": -0.0335,
+          "impact": "pushes towards Benign"
+        },
+        {
+          "feature": "worst radius",
+          "value": 11.37,
+          "shap_value": -0.032,
+          "impact": "pushes towards Benign"
+        },
+        {
+          "feature": "mean concavity",
+          "value": 0.0124,
+          "shap_value": -0.0296,
+          "impact": "pushes towards Benign"
+        },
+        {
+          "feature": "mean concave points",
+          "value": 0.0137,
+          "shap_value": -0.028,
+          "impact": "pushes towards Benign"
+        },
+        {
+          "feature": "radius error",
+          "value": 0.1753,
+          "shap_value": -0.0265,
+          "impact": "pushes towards Benign"
+        },
+        {
+          "feature": "worst area",
+          "value": 392.2,
+          "shap_value": -0.0261,
+          "impact": "pushes towards Benign"
+        }
+      ]
+    },
+    {
+      "title": "Borderline Diagnostic Case",
+      "sample_index": 3,
+      "ground_truth": "Malignant",
+      "predicted_class": "Benign",
+      "malignant_probability": 0.5,
+      "top_contributions": [
+        {
+          "feature": "worst texture",
+          "value": 30.86,
+          "shap_value": 0.0695,
+          "impact": "pushes towards Malignant"
+        },
+        {
+          "feature": "texture error",
+          "value": 1.851,
+          "shap_value": -0.0515,
+          "impact": "pushes towards Benign"
+        },
+        {
+          "feature": "worst smoothness",
+          "value": 0.1431,
+          "shap_value": 0.0311,
+          "impact": "pushes towards Malignant"
+        },
+        {
+          "feature": "worst concave points",
+          "value": 0.1565,
+          "shap_value": 0.0299,
+          "impact": "pushes towards Malignant"
+        },
+        {
+          "feature": "mean concave points",
+          "value": 0.0584,
+          "shap_value": 0.0253,
+          "impact": "pushes towards Malignant"
+        },
+        {
+          "feature": "worst concavity",
+          "value": 0.3194,
+          "shap_value": 0.0146,
+          "impact": "pushes towards Malignant"
+        },
+        {
+          "feature": "mean concavity",
+          "value": 0.0939,
+          "shap_value": 0.0098,
+          "impact": "pushes towards Malignant"
+        },
+        {
+          "feature": "worst fractal dimension",
+          "value": 0.0935,
+          "shap_value": 0.0091,
+          "impact": "pushes towards Malignant"
+        }
+      ]
+    }
+  ],
+  "disclaimer": "SHAP quantifies feature attributions within the trained mathematical estimator and does not prove biological causality."
+}

@@ -1,0 +1,132 @@
+{
+  "winning_model": "Support Vector Machine",
+  "original_parameters": {
+    "C": 1.0,
+    "gamma": "scale",
+    "kernel": "rbf"
+  },
+  "search_space": {
+    "svm__C": [
+      0.1,
+      1.0,
+      5.0,
+      10.0,
+      50.0
+    ],
+    "svm__gamma": [
+      "scale",
+      "auto",
+      0.01,
+      0.005,
+      0.001
+    ],
+    "svm__kernel": [
+      "rbf"
+    ]
+  },
+  "best_parameters": {
+    "svm__C": 5.0,
+    "svm__gamma": 0.01,
+    "svm__kernel": "rbf"
+  },
+  "best_cv_roc_auc": 0.9957,
+  "baseline_test_metrics": {
+    "accuracy": 0.9737,
+    "precision": 1.0,
+    "recall": 0.9286,
+    "specificity": 1.0,
+    "f1": 0.963,
+    "roc_auc": 0.9947,
+    "mcc": 0.9442,
+    "tp": 39,
+    "fp": 0,
+    "tn": 72,
+    "fn": 3
+  },
+  "tuned_test_metrics": {
+    "accuracy": 0.9825,
+    "precision": 1.0,
+    "recall": 0.9524,
+    "specificity": 1.0,
+    "f1": 0.9756,
+    "roc_auc": 0.9974,
+    "mcc": 0.9626,
+    "tp": 40,
+    "fp": 0,
+    "tn": 72,
+    "fn": 2
+  },
+  "paired_differences": {
+    "accuracy": {
+      "baseline": 0.9737,
+      "tuned": 0.9825,
+      "abs_difference": 0.0088,
+      "rel_pct_change": 0.9,
+      "ci_lower": 0.0,
+      "ci_upper": 0.0263,
+      "p_value_empirical": 0.3687,
+      "statistically_significant": false
+    },
+    "precision": {
+      "baseline": 1.0,
+      "tuned": 1.0,
+      "abs_difference": 0.0,
+      "rel_pct_change": 0.0,
+      "ci_lower": 0.0,
+      "ci_upper": 0.0,
+      "p_value_empirical": 1.0,
+      "statistically_significant": false
+    },
+    "recall": {
+      "baseline": 0.9286,
+      "tuned": 0.9524,
+      "abs_difference": 0.0238,
+      "rel_pct_change": 2.56,
+      "ci_lower": 0.0,
+      "ci_upper": 0.0714,
+      "p_value_empirical": 0.3687,
+      "statistically_significant": false
+    },
+    "specificity": {
+      "baseline": 1.0,
+      "tuned": 1.0,
+      "abs_difference": 0.0,
+      "rel_pct_change": 0.0,
+      "ci_lower": 0.0,
+      "ci_upper": 0.0,
+      "p_value_empirical": 1.0,
+      "statistically_significant": false
+    },
+    "f1": {
+      "baseline": 0.963,
+      "tuned": 0.9756,
+      "abs_difference": 0.0126,
+      "rel_pct_change": 1.31,
+      "ci_lower": 0.0,
+      "ci_upper": 0.0399,
+      "p_value_empirical": 0.3687,
+      "statistically_significant": false
+    },
+    "roc_auc": {
+      "baseline": 0.9947,
+      "tuned": 0.9974,
+      "abs_difference": 0.0026,
+      "rel_pct_change": 0.27,
+      "ci_lower": 0.0,
+      "ci_upper": 0.0089,
+      "p_value_empirical": 0.12,
+      "statistically_significant": false
+    },
+    "mcc": {
+      "baseline": 0.9442,
+      "tuned": 0.9626,
+      "abs_difference": 0.0185,
+      "rel_pct_change": 1.96,
+      "ci_lower": 0.0,
+      "ci_upper": 0.0554,
+      "p_value_empirical": 0.3687,
+      "statistically_significant": false
+    }
+  },
+  "tuning_summary_narrative": "Tuned Support Vector Machine using 5-fold Stratified GridSearchCV across 25 parameter candidates. Achieved best CV ROC-AUC of 0.9957. Held-out test ROC-AUC reached 0.9974 (baseline: 0.9947). Paired bootstrap analysis across 3,000 resamples provides rigorous confidence bounds on observed metric differences."
+}
